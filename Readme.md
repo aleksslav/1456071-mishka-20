@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Александр Слав](https://up.htmlacademy.ru/adaptive/20/user/1456071).
-* Наставник: `Александр Карташов`.
+* Наставник: [Александр Карташов](https://htmlacademy.ru/profile/id77080).
 
 ---
 
