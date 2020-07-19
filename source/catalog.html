@@ -16,71 +16,69 @@
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item site-list__item--active">
-              <a>Каталог товаров</a>
+              <a class="site-list__link">Каталог товаров</a>
             </li>
             <li class="site-list__item">
-              <a href="form.html">Вязание на заказ</a>
+              <a class="site-list__link" href="form.html">Вязание на заказ</a>
             </li>
           </ul>
           <ul class="main-nav__list cart-list">
             <li class="cart-list__item cart-list__item--search">
-              <a href="#">Поиск по сайту</a>
+              <a class="cart-list__link" href="#">Поиск по сайту</a>
             </li>
             <li class="cart-list__item cart-list__item--cart">
-              <a href="#">Корзина: пока пуста</a>
+              <a class="cart-list__link" href="#">Корзина: пока пуста</a>
             </li>
           </ul>
         </div>
-        <h1 class="page-header__title">Каталог товаров</h1>
       </nav>
     </header>
     <main class="page-main">
-      <section class="product-cards">
+      <h1 class="page-header__title">Каталог товаров</h1>
+      <section class="product-card">
         <ul class="product-card__list">
           <li class="product-card__item">
-            <img src="https://via.placeholder.com/260x195" alt="Зайчик-попрыгайчик">
+            <img class="product-card__image" src="https://via.placeholder.com/260x195" alt="Зайчик-попрыгайчик">
             <h2 class="product-card__title">Зайчик-попрыгайчик</h2>
             <p class="product-card__description">Рост 30 см, вес 200 г</p>
             <p class="product-card__price">1 200 руб.</p>
-            <button class="product-card__cart" type="button">Добавить в корзину</button>
+            <a class="product-card__link">Добавить в корзину</a>
           </li>
           <li class="product-card__item">
-            <img src="https://via.placeholder.com/260x195" alt="Зайчик-попрыгайчик">
+            <img class="product-card__image" src="https://via.placeholder.com/260x195" alt="Зайчик-попрыгайчик">
             <h2 class="product-card__title">Корзинка для белья</h2>
             <p class="product-card__description">Диаметр 15 см, высота 10 см</p>
             <p class="product-card__price">690 руб.</p>
-            <button class="product-card__cart" type="button">Добавить в корзину</button>
+            <a class="product-card__link">Добавить в корзину</a>
           </li>
           <li class="product-card__item">
-            <img src="https://via.placeholder.com/260x195" alt="Зайчик-попрыгайчик">
+            <img class="product-card__image" src="https://via.placeholder.com/260x195" alt="Зайчик-попрыгайчик">
             <h2 class="product-card__title">Большая корзинка<br>для игрушек</h2>
             <p class="product-card__description">Диаметр 30 см, высота 30 см</p>
             <p class="product-card__price">1 500 руб.</p>
-            <button class="product-card__cart" type="button">Добавить в корзину</button>
+            <a class="product-card__link">Добавить в корзину</a>
           </li>
         </ul>
-      </section>        
-      <footer class="page-footer">
-        <div class="page-footer__wrapper">
-          <div class="page-footer__social social">
-            <ul class="social__list">
-              <li class="social__item">
-                <a class="social__link social__link--instagram" href="#">Инстаграмм</a>
-              </li>           
-              <li class="social__item">
-                <a class="social__link social__link--facebook" href="#">Фейсбук</a>
-              </li>
-              <li class="social__item">
-                <a class="social__link social__link--twitter" href="#">Твиттер</a>
-              </li>
-            </ul>
-          </div>
-          <div class="page-footer__copyright copyright">
-            <b class="copyright__text">Разработано:</b>
-            <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-          </div>
-        </div>
-      </footer>
+      </section>     
     </main>
+    <footer class="page-footer">
+      <div class="page-footer__wrapper">        
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--instagram" href="#">Инстаграмм</a>
+          </li>           
+          <li class="social__item">
+            <a class="social__link social__link--facebook" href="#">Фейсбук</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--twitter" href="#">Твиттер</a>
+          </li>
+        </ul>        
+        <div class="page-footer__copyright copyright">
+          <b class="copyright__text">Разработано:</b>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

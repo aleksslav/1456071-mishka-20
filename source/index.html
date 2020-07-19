@@ -16,25 +16,25 @@
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
-              <a href="catalog.html">Каталог товаров</a>
+              <a class="site-list__link" href="catalog.html">Каталог товаров</a>
             </li>
             <li class="site-list__item">
-              <a href="form.html">Вязание на заказ</a>
+              <a class="site-list__link" href="form.html">Вязание на заказ</a>
             </li>
           </ul>
           <ul class="main-nav__list cart-list">
             <li class="cart-list__item cart-list__item--search">
-              <a href="#">Поиск по сайту</a>
+              <a class="cart-list__link" href="#">Поиск по сайту</a>
             </li>
             <li class="cart-list__item cart-list__item--cart">
-              <a href="#">Корзина: пока пуста</a>
+              <a class="cart-list__link" href="#">Корзина: пока пуста</a>
             </li>
           </ul>
-        </div>
-        <h1 class="page-header__title">Милые штуки ручной работы для дома</h1>
+        </div>        
       </nav>
     </header>
     <main class="page-main">
+      <h1 class="page-header__title">Милые штуки ручной работы для дома</h1>
       <section class="features">
         <div class="features__wrapper">
           <ul class="features__list">
@@ -47,31 +47,31 @@
           </ul>
         </div>
       </section>
-      <section class="card">
-        <div class="card__wrapper">
-          <h2 class="card__title">Вязаные корзинки</h2>
-          <h3 class="card__title--week">Товар Недели</h3>
-          <p class="card__description">Экологически чистая пряжа,<br>
+      <section class="popular-product">
+        <div class="popular-product__wrapper">
+          <h2 class="popular-product__title">Вязаные корзинки</h2>
+          <h3 class="popular-product__title--week">Товар Недели</h3>
+          <p class="popular-product__description">Экологически чистая пряжа,<br>
             ручная работа. Доступны в шести<br>
             расцветках, и трех размерах.
           </p>
-          <dl class="card__list">
-            <div class="card__item">
-              <dt class="card__property">Цвет:</dt>
-              <dd class="card__value">«Тиффани»/серый</dd>
+          <dl class="popular-product__list">
+            <div class="popular-product__item">
+              <dt class="popular-product__property">Цвет:</dt>
+              <dd class="popular-product__value">«Тиффани»/серый</dd>
             </div>
-            <div class="card__item">
-              <dt class="card__property">Диаметр:</dt>
-              <dd class="card__value">25 см</dd>
+            <div class="popular-product__item">
+              <dt class="popular-product__property">Диаметр:</dt>
+              <dd class="popular-product__value">25 см</dd>
             </div>
-            <div class="card__item">
-              <dt class="card__property">Высота:</dt>
-              <dd class="card__value">15 см</dd>
+            <div class="popular-product__item">
+              <dt class="popular-product__property">Высота:</dt>
+              <dd class="popular-product__value">15 см</dd>
             </div>
           </dl>
-          <img src="https://via.placeholder.com/260x315" alt="Вязаные корзинки">
-          <p class="card__price">Цена: 990 руб.</p>
-          <a class="button" href="#">Заказать</a>
+          <img class="popular-product__image" src="https://via.placeholder.com/260x315" alt="Вязаные корзинки">
+          <p class="popular-product__price">Цена: 990 руб.</p>
+          <a class="popular-product__order button" href="#">Заказать</a>
         </div>
       </section>
       <section class="advantages">
@@ -98,28 +98,26 @@
             </li>
           </ul>
         </div>
-      </section>  
-      <footer class="page-footer">
-        <div class="page-footer__wrapper">
-          <div class="page-footer__social social">
-            <ul class="social__list">
-              <li class="social__item">
-                <a class="social__link social__link--instagram" href="#">Инстаграмм</a>
-              </li>           
-              <li class="social__item">
-                <a class="social__link social__link--facebook" href="#">Фейсбук</a>
-              </li>
-              <li class="social__item">
-                <a class="social__link social__link--twitter" href="#">Твиттер</a>
-              </li>
-            </ul>
-          </div>
-          <div class="page-footer__copyright copyright">
-            <b class="copyright__text">Разработано:</b>
-            <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-          </div>
-        </div>
-      </footer>
+      </section>        
     </main>
+    <footer class="page-footer">
+      <div class="page-footer__wrapper">        
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--instagram" href="#">Инстаграмм</a>
+          </li>           
+          <li class="social__item">
+            <a class="social__link social__link--facebook" href="#">Фейсбук</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--twitter" href="#">Твиттер</a>
+          </li>
+        </ul>        
+        <div class="page-footer__copyright copyright">
+          <b class="copyright__text">Разработано:</b>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
