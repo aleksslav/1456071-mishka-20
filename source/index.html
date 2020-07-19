@@ -1,12 +1,123 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
   </head>
-  <body>
-
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p>
-
+  <body class="page__body">
+    <header class="page-header">
+      <nav class="main-nav">
+        <a class="page-header__logo">
+          <img src="https://via.placeholder.com/86x35" alt="Мишка">
+        </a>
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item">
+              <a class="site-list__link" href="catalog.html">Каталог товаров</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="form.html">Вязание на заказ</a>
+            </li>
+          </ul>
+          <ul class="main-nav__list cart-list">
+            <li class="cart-list__item cart-list__item--search">
+              <a class="cart-list__link" href="#">Поиск по сайту</a>
+            </li>
+            <li class="cart-list__item cart-list__item--cart">
+              <a class="cart-list__link" href="#">Корзина: пока пуста</a>
+            </li>
+          </ul>
+        </div>        
+      </nav>
+    </header>
+    <main class="page-main">
+      <h1 class="page-header__title">Милые штуки ручной работы для дома</h1>
+      <section class="features">
+        <div class="features__wrapper">
+          <ul class="features__list">
+            <li class="features__item features__item--interior">
+              <a class="features__title">Предметы <br> интерьера</a>            
+            </li>
+            <li class="features__item features__item--toys">
+              <a class="features__title">Детские <br> игрушки</a>            
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="popular-product">
+        <div class="popular-product__wrapper">
+          <h2 class="popular-product__title">Вязаные корзинки</h2>
+          <h3 class="popular-product__title--week">Товар Недели</h3>
+          <p class="popular-product__description">Экологически чистая пряжа,<br>
+            ручная работа. Доступны в шести<br>
+            расцветках, и трех размерах.
+          </p>
+          <dl class="popular-product__list">
+            <div class="popular-product__item">
+              <dt class="popular-product__property">Цвет:</dt>
+              <dd class="popular-product__value">«Тиффани»/серый</dd>
+            </div>
+            <div class="popular-product__item">
+              <dt class="popular-product__property">Диаметр:</dt>
+              <dd class="popular-product__value">25 см</dd>
+            </div>
+            <div class="popular-product__item">
+              <dt class="popular-product__property">Высота:</dt>
+              <dd class="popular-product__value">15 см</dd>
+            </div>
+          </dl>
+          <img class="popular-product__image" src="https://via.placeholder.com/260x315" alt="Вязаные корзинки">
+          <p class="popular-product__price">Цена: 990 руб.</p>
+          <a class="popular-product__order button" href="#">Заказать</a>
+        </div>
+      </section>
+      <section class="advantages">
+        <div class="advantages__wrapper">
+          <h2 class="advantages__title">Вязаные корзинки</h2>
+          <ul class="advantages__list">
+            <li class="advantages__item advantages__item--ecology">
+              <p class="advantages__description">Экологически <br>чистые материалы</p>            
+            </li>
+            <li class="advantages__item advantages__item--stylishly">
+              <p class="advantages__description">Скандинавский стиль <br>по российской цене</p>            
+            </li>
+            <li class="advantages__item advantages__item--like">
+              <p class="advantages__description">Увеличивает лайки<br>на фотографиях</p>            
+            </li>
+            <li class="advantages__item advantages__item--bind">
+              <p class="advantages__description">Связано вручную с <br>любовью и умилением</p>            
+            </li>
+            <li class="advantages__item advantages__item--support">
+              <p class="advantages__description">Поддержка отечественного производителя</p>            
+            </li>
+            <li class="advantages__item advantages__item--package">
+              <p class="advantages__description">Поставляется в <br>подарочной упаковке</p>            
+            </li>
+          </ul>
+        </div>
+      </section>        
+    </main>
+    <footer class="page-footer">
+      <div class="page-footer__wrapper">        
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--instagram" href="#">Инстаграмм</a>
+          </li>           
+          <li class="social__item">
+            <a class="social__link social__link--facebook" href="#">Фейсбук</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--twitter" href="#">Твиттер</a>
+          </li>
+        </ul>        
+        <div class="page-footer__copyright copyright">
+          <b class="copyright__text">Разработано:</b>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
