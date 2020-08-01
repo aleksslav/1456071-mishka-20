@@ -1,0 +1,193 @@
+.contacts {
+  position: relative;
+  padding-top: 17px;
+  padding-bottom: 38px;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 21px;
+    padding-bottom: 57px;
+    display: block;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.contacts__wrapper {
+  padding-top: 4px;
+  padding-bottom: 7px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+
+  @media (min-width: @desktop-width) {
+    margin: 0;
+    padding-right: 0;
+    padding-top: 27px;
+    padding-left: 175px;
+    width: 525px;
+  }
+}
+
+.contacts__title {
+  position: relative;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 43px;
+    line-height: 50px;
+    flex-grow: 1;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    display: none;
+    top: 50%;
+    right: 3px;
+    transform: translateY(-50%);
+    width: 47px;
+    height: 82px;
+    background-image: url("../img/icon-flag.svg");
+    background-size: image-size("../img/icon-flag.svg");
+    background-repeat: no-repeat;
+
+    @media (min-width: @tablet-width) {
+      display: block;
+    }
+
+    @media (min-width: @desktop-width) {
+      left: -112px;
+      right: auto;
+    }
+  }
+}
+
+.contacts__list {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+}
+
+.contacts__item {
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: 400;
+  color: @font-basic-dark;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 49px;
+    margin-right: 45px;
+    margin-bottom: 49px;
+    font-size: 17px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 48px;
+    margin-bottom: 42px;
+  }
+}
+
+.contacts__property {
+  margin-right: 26px;
+}
+
+.contacts__value {
+  margin: 0;
+  max-width: 180px;
+
+  a {
+    text-decoration: none;
+    color: @font-basic-dark;
+  }
+
+  @media (min-width: @tablet-width) {
+    max-width: 240px;
+  }
+}
+
+.contacts__map {
+  margin-bottom: 39px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 55px;
+  }
+
+  @media (min-width: @desktop-width) {
+    position: absolute;
+    top: 69px;
+    right: 50px;
+    margin-bottom: 0;
+    width: 527px;
+    height: 457px;
+  }
+}
+
+.map {
+  position: relative;
+  overflow: hidden;
+  height: 457px;
+}
+
+.map__image {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+  width: 320px;
+  height: 457px;
+
+  @media (min-width: @tablet-width) {
+    width: 768px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 527px;
+  }
+}
+
+.map__marker {
+  position: absolute;
+  z-index: 10;
+  left: 50%;
+  top: 50%;
+  width: 67px;
+  height: 100px;
+  background-image: url("../img/icon-map-pin.svg");
+  background-size: 67px 100px;
+  background-repeat: no-repeat;
+}
+
+
+.contacts__button-wrapper {
+  @media (min-width: @desktop-width) {
+    padding: 0;
+    width: 230px;
+    min-width: auto;
+    margin-left: 175px;
+  }
+}
+
+.contacts__button {
+  @media (min-width: @tablet-width) {
+    width: 230px;
+  }
+}
