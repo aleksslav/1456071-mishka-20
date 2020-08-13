@@ -1,0 +1,141 @@
+.product-card {
+  display: flex;
+  flex-wrap: wrap;
+  width: 260px;
+
+  @media (min-width: @tablet-width) {
+    width: 668px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 316px;
+  }
+}
+
+.product-card__link-image {
+  display: block;
+  overflow: hidden;
+  width: 260px;
+
+  @media (min-width: @tablet-width) {
+    width: 50%;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 100%;
+  }
+}
+
+.product-card__image {
+  display: block;
+  width: 260px;
+  height: 195px;
+
+  @media (min-width: @tablet-width) {
+    width: 334px;
+    height: 334px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 316px;
+    height: 462px;
+  }
+}
+
+.product-card__description-wrapper {
+  box-sizing: border-box;
+  padding: 26px 27px 11px;
+  width: 260px;
+  border: 1px solid @special-gallery;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: column;
+    padding-top: 25px;
+    width: 50%;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 9px;
+    width: 100%;
+    min-height: 197px;
+  }
+}
+
+.product-card__title {
+  margin-top: 0;
+  margin-bottom: 5px;
+  font-size: 17px;
+  font-weight: 700;
+  color: @special-gallery;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+  }
+}
+
+.product-card__link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.product-card__description {
+  margin-top: 0;
+  margin-bottom: 19px;
+  font-size: 13px;
+  line-height: 30px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 0;
+    font-size: 15px;
+  }
+}
+
+.product-card__price-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 21px 0 16px;
+  border-top: 1px solid @special-gallery;
+
+  @media (min-width: @tablet-width) {
+    margin-top: auto;
+    padding: 22px 4px 15px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 22px 5px 17px 0;
+  }
+}
+
+.product-card__price {
+  margin: 0;
+  font-weight: 700;
+  color: @special-gallery;
+
+  @media (min-width: @tablet-width) {
+    font-size: 17px;
+  }
+}
+
+.product-card__button {
+  width: 20px;
+  height: 19px;
+}
+
+.product-card__button-image {
+  overflow-x: hidden;
+  width: 20px;
+  height: 19px;
+  fill: @special-gallery;
+  pointer-events: none;
+
+  .product-card__button:hover &,
+  .product-card__button:active & {
+    fill: @special-gallery;
+  }
+
+  .product-card__button:active & {
+    fill-opacity: 0.3;
+  }
+}

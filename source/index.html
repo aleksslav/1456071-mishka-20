@@ -10,11 +10,11 @@
     <header class="page-header">
       <nav class="main-nav main-nav--closed main-nav--nojs">
         <div class="main-nav__logo-wrapper">
-          <a class="main-nav__logo">
+          <a class="main-nav__logo header-logo">
             <picture>
               <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
               <source media="(min-width: 770px)" srcset="img/logo-tablet.svg">
-              <img class="main-nav__image" src="img/logo-mobile.svg" width="86" height="35" alt="Логотип сайта Мишка">
+              <img class="header-logo__image" src="img/logo-mobile.svg" width="86" height="35" alt="Логотип сайта Мишка">
             </picture>
           </a>
           <button class="main-nav__toggle" type="button">
@@ -22,24 +22,24 @@
           </button>
         </div>
         <ul class="main-nav__list site-list">
-          <li class="site-list__item">
-            <a class="site-list__link" href="catalog.html">Каталог товаров</a>
+          <li class="main-nav__item site-list__item">
+            <a class="main-nav__link site-list__link" href="catalog.html">Каталог товаров</a>
           </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="form.html">Вязание на заказ</a>
+          <li class="main-nav__item site-list__item">
+            <a class="main-nav__link site-list__link" href="form.html">Вязание на заказ</a>
           </li>
         </ul>
         <ul class="main-nav__list cart-list">
-          <li class="cart-list__item cart-list__item--search">
-            <a class="cart-list__link cart-list__search" href="#">
+          <li class="main-nav__item cart-list__item cart-list__item--search">
+            <a class="cart-list__link cart-list__search main-nav__link" href="#">
               <svg class="cart-list__icon cart-list__icon--search" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17.6px" height="17.6px" viewBox="-0.8 -0.8 17.6 17.6" enable-background="new -0.8 -0.8 17.6 17.6" xml:space="preserve">
                 <path fill="#231F20" d="M16.47,14.93l-3.415-3.415C14.02,10.226,14.6,8.634,14.6,6.899c0-4.253-3.447-7.699-7.7-7.699 S-0.8,2.646-0.8,6.899s3.446,7.7,7.699,7.7c1.734,0,3.326-0.58,4.613-1.546l3.417,3.416c0.203,0.202,0.418,0.33,0.771,0.33 c0.607,0,1.1-0.492,1.1-1.1C16.8,15.459,16.739,15.2,16.47,14.93z M1.399,6.899c0-3.038,2.462-5.5,5.5-5.5s5.5,2.462,5.5,5.5 s-2.462,5.5-5.5,5.5S1.399,9.938,1.399,6.899z"/>
               </svg>
               <span class="cart-list__text">Поиск по сайту</span>
             </a>
           </li>
-          <li class="cart-list__item cart-list__item--cart">
-            <a class="cart-list__link cart-list__cart" href="#">
+          <li class="main-nav__item cart-list__item cart-list__item--cart">
+            <a class="main-nav__link cart-list__link cart-list__cart" href="#">
               <svg class="cart-list__icon cart-list__icon--cart" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="20.294px" height="18.849px" viewBox="264.205 370.961 20.294 18.849" enable-background="new 264.205 370.961 20.294 18.849" xml:space="preserve">
                 <path fill="#231F20" d="M283.75,378.19h-3.151l-3.407-6.814c-0.185-0.37-0.634-0.52-1.006-0.335 c-0.371,0.186-0.521,0.636-0.335,1.006l3.071,6.143h-9.138l3.072-6.143c0.185-0.371,0.035-0.821-0.335-1.006 c-0.37-0.185-0.821-0.035-1.006,0.335l-3.407,6.814h-3.151c-0.414,0-0.75,0.336-0.75,0.75s0.336,0.75,0.75,0.75h0.157l0.855,2.991 c-0.187,0.137-0.316,0.347-0.316,0.595c0,0.396,0.309,0.71,0.697,0.739l1.656,5.795h12.697l1.656-5.795 c0.388-0.028,0.698-0.344,0.698-0.739c0-0.249-0.129-0.459-0.316-0.596l0.854-2.991h0.157c0.414,0,0.75-0.336,0.75-0.75 S284.164,378.19,283.75,378.19z M279.569,388.311h-10.433l-1.224-4.284h12.881L279.569,388.311z M281.222,382.526h-13.739 l-0.81-2.836h15.359L281.222,382.526z"/>
               </svg>
@@ -48,11 +48,11 @@
           </li>
         </ul>
         <ul class="main-nav__list stock-navigation">
-          <li class="stock-navigation__item">
-            <a class="stock-navigation__link" href="#">Новые поступления</a>
+          <li class="main-nav__item stock-navigation__item">
+            <a class="main-nav__link stock-navigation__link" href="#">Новые поступления</a>
           </li>
-          <li class="stock-navigation__item">
-            <a class="stock-navigation__link" href="#">Распродажа</a>
+          <li class="main-nav__item stock-navigation__item">
+            <a class="main-nav__link stock-navigation__link" href="#">Распродажа</a>
           </li>
         </ul>
         <p class="main-nav__text">Бесплатная доставка по России</p>
@@ -62,50 +62,64 @@
       <h1 class="visually-hidden">Милые штуки ручной работы для дома</h1>
       <section class="features">
         <div class="features__wrapper">
-          <h2 class="page-header__title">Милые штуки ручной работы&nbsp;для дома</h2>
-          <ul class="features__list">
-            <li class="features__item features__item--interior">
-              <a class="features__title">Предметы <br> интерьера</a>
+          <h2 class="features__title">Милые штуки ручной работы&nbsp;для дома</h2>
+          <ul class="features__list features-list">
+            <li class="features-list__item features-list__item--interior">
+              <a class="features-list__title">
+                <span>Предметы <br> интерьера</span>
+              </a>
+              <svg class="features-list__item--interior-icon" version="1.1" id="svg4488" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="40.219px" height="62.411px" viewBox="-259.404 -19.675 40.219 62.411" enable-background="new -259.404 -19.675 40.219 62.411" xml:space="preserve">
+                <g>
+                  <path d="M-244.227,18.283c-0.286,0.966-0.245,2.191,0.027,3.639c0.494,2.635,1.687,6.041,2.358,9.67h5.062 c0.696-3.641,1.949-7.05,2.471-9.683c0.287-1.445,0.33-2.66,0.041-3.617c-0.275-0.899-0.89-1.618-2.021-2.303h-5.997 C-243.361,16.668-243.96,17.38-244.227,18.283z"/>
+                  <path d="M-232.395,38.278h-13.799c-1.293,0-2.299,0.976-2.299,2.229v2.229h2.299h13.799h2.299v-2.229 C-230.096,39.254-231.102,38.278-232.395,38.278z"/>
+                  <path d="M-225.262-17.446h-11.732c0-1.244-1.015-2.229-2.3-2.229c-1.283,0-2.3,0.985-2.3,2.229h-11.737l-6.073,25.517 c0.794-0.461,1.589-0.992,2.632-0.992c1.359,0,2.243,0.818,2.924,1.375c0.682,0.557,1.162,0.849,1.447,0.849 c0.292,0.001,0.769-0.287,1.451-0.836c0.681-0.548,1.564-1.358,2.915-1.358c1.349,0,2.237,0.806,2.919,1.354 c0.684,0.549,1.161,0.84,1.451,0.84c0.146,0,0.338-0.073,0.58-0.214c0.242-0.141,0.53-0.353,0.872-0.626 c0.512-0.411,1.139-0.967,1.99-1.218c0.284-0.085,0.593-0.136,0.93-0.136c1.347,0,2.238,0.805,2.92,1.354 c0.683,0.548,1.159,0.84,1.451,0.84c0.287-0.002,0.766-0.296,1.445-0.85c0.684-0.554,1.571-1.367,2.925-1.367 c1.356,0,2.239,0.817,2.919,1.371c0.342,0.276,0.631,0.489,0.872,0.631c0.24,0.143,0.431,0.214,0.575,0.214 c0.288,0,0.762-0.293,1.442-0.854c0.68-0.559,1.567-1.384,2.929-1.384c1.044,0,1.839,0.533,2.632,0.997L-225.262-17.446z"/>
+                  <path d="M-235.881,33.82h-6.864c-0.657,0-1.15,0.479-1.15,1.115c0,0.635,0.493,1.113,1.15,1.113h6.9c0.655,0,1.15-0.479,1.15-1.113 c0-0.636-0.495-1.115-1.15-1.115H-235.881z"/>
+                  <path d="M-239.295,9.336c-0.146,0-0.338,0.074-0.58,0.213c-0.157,0.094-0.37,0.261-0.57,0.41v3.731h2.299V9.959 C-238.651,9.581-239.054,9.336-239.295,9.336z"/>
+                </g>
+              </svg>
             </li>
-            <li class="features__item features__item--toys">
-              <a class="features__title">Детские <br> игрушки</a>
+            <li class="features-list__item features-list__item--toys">
+              <a class="features-list__title">
+                <span>Детские <br> игрушки</span>
+              </a>
+              <svg class="features-list__item--toys-icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="60px" height="59.62px" viewBox="226.001 226.19 60 59.62" enable-background="new 226.001 226.19 60 59.62" xml:space="preserve">
+                <path fill="#149080" d="M226.001,269.871l27.438,15.934v-23.346l-27.438-15.94V269.871z M277.347,238.627v2.453 c0,1.817-3.458,3.29-7.73,3.29c-4.266,0-7.727-1.473-7.727-3.29v-4.059h0.024c0.26,1.714,3.604,3.073,7.702,3.073 c4.272,0,7.729-1.474,7.729-3.285c0-1.819-3.457-3.289-7.729-3.289c-0.339,0-0.675,0.01-1.002,0.03l-4.975-2.888v3.086 c0,1.817-3.454,3.29-7.723,3.29c-2.683,0-5.045-0.583-6.433-1.467c-0.196-0.203-0.439-0.401-0.732-0.586 c-0.363-0.381-0.565-0.797-0.565-1.236v-2.986l-4.807,2.792c-0.347-0.017-0.696-0.033-1.054-0.033c-4.267,0-7.727,1.469-7.727,3.289 c0,1.811,3.46,3.285,7.727,3.285c4.099,0,7.446-1.358,7.705-3.073h0.022v4.059c0,1.817-3.455,3.29-7.727,3.29 c-4.267,0-7.727-1.473-7.727-3.29v-2.42l-5.952,3.452l27.531,15.986l27.351-15.882L277.347,238.627z M263.703,248.793 c0,1.817-3.46,3.287-7.727,3.287c-4.269,0-7.729-1.47-7.729-3.287v-4.059h0.024c0.26,1.715,3.603,3.076,7.705,3.076 c4.101,0,7.443-1.361,7.705-3.076h0.021V248.793L263.703,248.793z M258.558,262.666v23.144L286,269.871v-23.144L258.558,262.666z  M255.917,232.762c4.269,0,7.723-1.47,7.723-3.286c0-1.814-3.454-3.287-7.723-3.287c-4.27,0-7.729,1.472-7.729,3.287 C248.187,231.292,251.647,232.762,255.917,232.762"/>
+              </svg>
             </li>
           </ul>
         </div>
       </section>
-      <section class="popular-product content-wrapper">
-        <header class="popular-product__header">
-          <h2 class="popular-product__title">Вязаные корзинки</h2>
-          <h3 class="popular-product__title--week">Товар Недели</h3>
-        </header>
-        <div class="popular-product__wrapper">
-          <div class="popular-product__content">
+      <section class="popular-product">
+        <div class="content-wrapper popular-product__content-wrapper">
+          <header class="popular-product__header">
+            <h2 class="popular-product__title">Вязаные корзинки</h2>
+            <h3 class="popular-product__title--week">Товар Недели</h3>
+          </header>
+          <div class="popular-product__wrapper">
             <p class="popular-product__description">Экологически чистая пряжа,<br>
               ручная работа. Доступны в шести<br>расцветках, и трех размерах.
             </p>
-            <dl class="popular-product__list">
-              <div class="popular-product__item">
-                <dt class="popular-product__property">Цвет:</dt>
-                <dd class="popular-product__value">«Тиффани»/серый</dd>
+            <dl class="popular-product__list specification-list">
+              <div class="specification-list__item">
+                <dt class="specification-list__property">Цвет:</dt>
+                <dd class="specification-list__value">«Тиффани»/серый</dd>
               </div>
-              <div class="popular-product__item">
-                <dt class="popular-product__property">Диаметр:</dt>
-                <dd class="popular-product__value">25 см</dd>
+              <div class="specification-list__item">
+                <dt class="specification-list__property">Диаметр:</dt>
+                <dd class="specification-list__value">25 см</dd>
               </div>
-              <div class="popular-product__item">
-                <dt class="popular-product__property">Высота:</dt>
-                <dd class="popular-product__value">15 см</dd>
+              <div class="specification-list__item">
+                <dt class="specification-list__property">Высота:</dt>
+                <dd class="specification-list__value">15 см</dd>
               </div>
             </dl>
-          </div>
-          <div class="popular-product__picture">
-          <picture>
-            <source media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.jpg">
-            <source media="(min-width: 770px)" srcset="img/triple-set-tablet@1x.jpg">
-            <img class="popular-product__image" src="img/triple-set-mobile@1x.jpg" width="260" height="315" alt="Вязаные корзинки">
-          </picture>
-          </div>
-          <div class="popular-product__cost">
+            <div class="popular-product__image-wrapper">
+            <picture>
+              <source media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.jpg">
+              <source media="(min-width: 770px)" srcset="img/triple-set-tablet@1x.jpg">
+              <img class="popular-product__image" src="img/triple-set-mobile@1x.jpg" width="260" height="315" alt="Вязаные корзинки">
+            </picture>
+            </div>
             <p class="popular-product__price">Цена: 990 руб.</p>
             <a class="popular-product__order button" href="#">Заказать</a>
           </div>
@@ -114,24 +128,60 @@
       <section class="advantages">
         <div class="advantages__wrapper content-wrapper">
           <h2 class="advantages__title">Коротко о нас:</h2>
-          <ul class="advantages__list">
-            <li class="advantages__item advantages__item--ecology">
-              <p class="advantages__description">Экологически <br>чистые материалы</p>
+          <ul class="advantages__list advantages-list">
+            <li class="advantages-list__item advantages-list__item--ecology">
+              <svg class="advantages-list__item--icon advantages-list__item--ecology-icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="31.972px" height="37.301px" viewBox="8.014 4.35 31.972 37.301" enable-background="new 8.014 4.35 31.972 37.301" xml:space="preserve">
+                <path fill="#63D1BB" d="M24,41.65c8.827,0,15.986-7.159,15.986-15.986C31.158,25.664,24,32.822,24,41.65z M12.641,20.78 c0,2.451,1.989,4.441,4.44,4.441c0.932,0,1.803-0.294,2.513-0.782l-0.036,0.337c0,2.451,1.99,4.441,4.441,4.441 s4.44-1.99,4.44-4.441l-0.036-0.337c0.719,0.497,1.582,0.782,2.514,0.782c2.451,0,4.44-1.99,4.44-4.441 c0-1.768-1.038-3.286-2.54-3.997c1.492-0.71,2.54-2.229,2.54-3.997c0-2.451-1.989-4.44-4.44-4.44c-0.932,0-1.803,0.293-2.514,0.781 L28.44,8.79c0-2.451-1.989-4.44-4.44-4.44s-4.441,1.99-4.441,4.44l0.036,0.337c-0.719-0.497-1.581-0.781-2.513-0.781 c-2.451,0-4.44,1.99-4.44,4.44c0,1.768,1.039,3.286,2.54,3.997C13.68,17.494,12.641,19.012,12.641,20.78z M24,12.343 c2.451,0,4.44,1.989,4.44,4.44c0,2.451-1.989,4.44-4.44,4.44s-4.441-1.99-4.441-4.44C19.559,14.332,21.549,12.343,24,12.343z  M8.014,25.664c0,8.827,7.158,15.986,15.986,15.986C24,32.822,16.842,25.664,8.014,25.664z"/>
+              </svg>
+              <p class="advantages-list__description">Экологически <br>чистые материалы</p>
             </li>
-            <li class="advantages__item advantages__item--stylishly">
-              <p class="advantages__description">Скандинавский стиль <br>по российской цене</p>
+            <li class="advantages-list__item advantages-list__item--stylishly">
+              <svg class="advantages-list__item--icon advantages-list__item--stylishly-icon" version="1.1" id="Money" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="46.575px" height="27.332px" viewBox="46.212 56.834 46.575 27.332" enable-background="new 46.212 56.834 46.575 27.332" xml:space="preserve">
+                <path d="M88.882,56.834H50.116c-2.156,0-3.904,1.749-3.904,3.905v19.521c0,2.156,1.748,3.905,3.904,3.905h38.766 c2.156,0,3.905-1.749,3.905-3.905V60.739C92.787,58.583,91.038,56.834,88.882,56.834z M49.235,81.784V59.551h40.202v22.233H49.235z" />
+                <path d="M53.14,77.88h32.395V63.456H53.14V77.88z M69.5,65.354c2.936,0,5.315,2.38,5.315,5.314c0,2.936-2.379,5.314-5.315,5.314 s-5.314-2.379-5.314-5.314C64.185,67.733,66.564,65.354,69.5,65.354z"/>
+              </svg>
+              <p class="advantages-list__description">Скандинавский стиль <br>по российской цене</p>
             </li>
-            <li class="advantages__item advantages__item--like">
-              <p class="advantages__description">Увеличивает лайки<br>на фотографиях</p>
+            <li class="advantages-list__item advantages-list__item--like">
+              <svg class="advantages-list__item--icon advantages-list__item--like-icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="33.05px" height="27.857px" viewBox="47.475 50.071 33.05 27.857" enable-background="new 47.475 50.071 33.05 27.857" xml:space="preserve">
+                <path fill="#63D1BB" d="M80.525,58.808c0-4.825-3.912-8.736-8.736-8.736c-3.405,0-6.348,1.951-7.789,4.793 c-1.441-2.842-4.384-4.793-7.789-4.793c-4.825,0-8.736,3.911-8.736,8.736c0,9.127,14.657,19.121,16.525,19.121 C65.869,77.929,80.525,67.979,80.525,58.808z"/>
+              </svg>
+              <p class="advantages-list__description">Увеличивает лайки<br>на фотографиях</p>
             </li>
-            <li class="advantages__item advantages__item--bind">
-              <p class="advantages__description">Связано вручную с <br>любовью и умилением</p>
+            <li class="advantages-list__item advantages-list__item--bind">
+              <svg class="advantages-list__item--icon advantages-list__item--bind-icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="34.373px" height="34.373px" viewBox="0 0 34.373 34.373" enable-background="new 0 0 34.373 34.373" xml:space="preserve">
+                <g>
+                  <path d="M0.286,14.069c-0.382,2.073-0.384,4.211,0.008,6.301l4.121-3.21L0.286,14.069z"/>
+                  <path d="M24.403,1.585C19.62-0.623,13.959-0.559,9.149,1.992l7.513,5.625L24.403,1.585z"/>
+                  <path d="M33.901,13.175l-4.811,3.748l4.936,3.695C34.522,18.173,34.489,15.63,33.901,13.175z"/>
+                  <path d="M9.209,32.414c4.844,2.534,10.724,2.65,15.73,0.113l-8.096-6.062L9.209,32.414z"/>
+                  <path d="M7.914,14.433L1.681,9.767c-0.32,0.669-0.595,1.356-0.825,2.056l5.308,3.974L7.914,14.433z"/>
+                  <path d="M18.593,25.102l8.336,6.242c0.277-0.191,0.551-0.391,0.82-0.601c0.318-0.248,0.625-0.505,0.92-0.771l-8.326-6.234 L18.593,25.102z"/>
+                  <path d="M11.413,11.707L4.002,6.158C3.54,6.709,3.117,7.285,2.733,7.881l6.931,5.189L11.413,11.707z"/>
+                  <path d="M22.093,22.375l8.092,6.059c0.471-0.544,0.904-1.112,1.297-1.701l-7.639-5.721L22.093,22.375z"/>
+                  <path d="M14.913,8.98L7.196,3.203C7.003,3.341,6.812,3.482,6.623,3.629C6.227,3.938,5.849,4.261,5.487,4.597l7.676,5.747 L14.913,8.98z"/>
+                  <path d="M25.592,19.649l6.972,5.221c0.33-0.662,0.615-1.341,0.855-2.033l-6.077-4.55L25.592,19.649z"/>
+                  <path d="M26.448,2.706L0.88,22.626c0.233,0.698,0.513,1.386,0.839,2.059l26.52-20.663C27.667,3.541,27.068,3.102,26.448,2.706z"/>
+                  <path d="M30.743,6.624c-0.301-0.386-0.614-0.754-0.939-1.106L2.786,26.567c0.262,0.402,0.542,0.797,0.843,1.183 c0.142,0.183,0.288,0.359,0.436,0.534L31.155,7.176C31.021,6.99,30.886,6.806,30.743,6.624z"/>
+                  <path d="M32.298,8.999L5.552,29.838c0.544,0.501,1.114,0.962,1.708,1.382l25.962-20.228C32.959,10.314,32.651,9.648,32.298,8.999z"/>
+                </g>
+              </svg>
+              <p class="advantages-list__description">Связано вручную с <br>любовью и умилением</p>
             </li>
-            <li class="advantages__item advantages__item--support">
-              <p class="advantages__description">Поддержка отечественного<br>производителя</p>
+            <li class="advantages-list__item advantages-list__item--support">
+              <svg class="advantages-list__item--icon advantages-list__item--support-icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="54.156px" height="23.183px" viewBox="612.532 500.386 54.156 23.183" enable-background="new 612.532 500.386 54.156 23.183" xml:space="preserve">
+                <g>
+                  <path d="M652.844,506.098c-3.647-0.971-7.839-1.667-12.359-1.666c-2.891,0.001-5.457,0.243-7.71,0.623l-6.784-4.668l-13.456,0.005 l5.811,6.184h8.447c-4.58,1.598-6.759,3.515-6.759,3.515l0.002,3.777c0,0,2.313,1.912,6.931,3.518l-8.623-0.005l-5.811,6.188 l13.455,0.002l6.816-4.692c2.261,0.398,4.822,0.647,7.681,0.648c4.522-0.001,8.712-0.697,12.36-1.667 c-1.176-1.775-1.915-3.743-1.918-5.877C650.93,509.842,651.665,507.871,652.844,506.098z"/>
+                  <path d="M656.267,507.132c-1.284,1.605-1.969,3.25-1.965,4.84c-0.007,1.597,0.677,3.238,1.968,4.847 c6.399-2.162,10.419-4.841,10.419-4.841S662.67,509.298,656.267,507.132z"/>
+                </g>
+              </svg>
+              <p class="advantages-list__description">Поддержка отечественного<br>производителя</p>
             </li>
-            <li class="advantages__item advantages__item--package">
-              <p class="advantages__description">Поставляется в <br>подарочной упаковке</p>
+            <li class="advantages-list__item advantages-list__item--package">
+              <svg class="advantages-list__item--icon advantages-list__item--package-icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="32.666px" height="32.486px" viewBox="239.665 239.757 32.666 32.486" enable-background="new 239.665 239.757 32.666 32.486" xml:space="preserve">
+                <path fill="#63D1BB" d="M242.56,272.243h12.504v-13.91H242.56V272.243z M270.742,248.623h-7.335 c0.521-0.267,0.984-0.549,1.396-0.845c1.588-1.133,2.424-2.57,2.42-3.999c0.002-1.169-0.556-2.202-1.359-2.901 c-0.805-0.704-1.869-1.119-3.016-1.121c-1.22-0.001-2.352,0.421-3.32,1.069c-1.459,0.979-2.606,2.451-3.424,4.067 c-0.039,0.079-0.078,0.157-0.115,0.236c-0.299-0.623-0.647-1.226-1.041-1.792c-0.691-0.985-1.523-1.86-2.497-2.511 c-0.97-0.646-2.103-1.069-3.322-1.069c-1.213,0.004-2.323,0.514-3.155,1.295c-0.828,0.783-1.41,1.885-1.412,3.135 c-0.002,0.73,0.211,1.494,0.649,2.188c0.552,0.872,1.424,1.628,2.633,2.248h-6.588c-0.878,0-1.591,0.712-1.591,1.59v5.897h15.396 v-7.488h1.873v7.488h15.396v-5.897C272.333,249.334,271.621,248.623,270.742,248.623 M248.38,246.284 c-0.622-0.391-1-0.785-1.22-1.135c-0.22-0.354-0.294-0.662-0.296-0.963c-0.004-0.504,0.248-1.042,0.691-1.461 c0.437-0.415,1.028-0.667,1.562-0.667h0.013c0.685,0,1.366,0.231,2.046,0.683c1.018,0.671,1.975,1.85,2.645,3.187 c0.342,0.676,0.609,1.39,0.789,2.087C251.528,247.694,249.532,247.013,248.38,246.284 M258.917,244.657 c0.557-0.797,1.21-1.466,1.887-1.916c0.68-0.451,1.362-0.683,2.047-0.683h0.006c0.574,0,1.117,0.22,1.494,0.55 c0.377,0.336,0.571,0.739,0.573,1.171c-0.004,0.512-0.272,1.259-1.467,2.132c-1.138,0.825-3.101,1.673-6.127,2.265 C257.62,246.974,258.177,245.704,258.917,244.657 M256.937,272.243h12.506v-13.91h-12.506V272.243z"/>
+              </svg>
+              <p class="advantages-list__description">Поставляется в <br>подарочной упаковке</p>
             </li>
           </ul>
         </div>
@@ -139,23 +189,27 @@
       <section class="reviews">
         <div class="reviews__wrapper content-wrapper">
           <h2 class="reviews__title">Отзывы</h2>
-          <div class="reviews__list slider">
-            <blockquote class="slider__item">
-              <div class="slider__author-info">
-                <p class="slider__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров
-                  и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают
-                  больше лайков!
-                </p>
-                <cite class="slider__author">
-                  <span class="slider__author-name">Анастасия Красильникова</span>
-                  <a class="slider__author-email" href="mailto:misssssiskras@gmail.com">@misssssiskras</a>
-                </cite>
-              </div>
-            </blockquote>
-            <div class="reviews__navigation">
-              <button class="reviews__nav-button reviews__nav-button--prev" type="button" aria-label="Назад"></button>
-              <button class="reviews__nav-button reviews__nav-button--next" type="button" aria-label="Вперёд"></button>
-            </div>
+          <blockquote class="reviews__content">
+            <p class="reviews__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров
+              и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают
+              больше лайков!
+            </p>
+            <cite class="reviews__author">
+              <span class="reviews__author-name">Анастасия Красильникова</span>
+              <a class="reviews__author-email" href="mailto:misssssiskras@gmail.com">@misssssiskras</a>
+            </cite>
+          </blockquote>
+          <div class="reviews__navigation">
+            <button class="reviews__nav-button reviews__nav-button--prev" type="button" aria-label="Назад">
+              <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="50px" height="26.003px" viewBox="0 0 50 26.003" enable-background="new 0 0 50 26.003" xml:space="preserve">
+                <polygon points="50,11.002 7.659,11.002 15.833,2.828 13.005,0 0,12.998 0.003,13.001 0,13.005 13.005,26.003 15.833,23.175 7.661,15.002 50,15.002 "/>
+              </svg>
+            </button>
+            <button class="reviews__nav-button reviews__nav-button--next" type="button" aria-label="Вперёд">
+              <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="50px" height="26.003px" viewBox="0 0 50 26.003" enable-background="new 0 0 50 26.003" xml:space="preserve">
+                <polygon points="0,11.002 42.341,11.002 34.166,2.828 36.995,0 50,12.998 49.996,13.001 50,13.005 36.995,26.003 34.166,23.175 42.339,15.002 0,15.002 "/>
+              </svg>
+            </button>
           </div>
           <a class="reviews__write button" href="#">Написать</a>
         </div>
@@ -202,9 +256,9 @@
             </g>
           </svg>
         </a>
-        <ul class="social__list">
-          <li class="social__item">
-            <a class="social__link social__link--instagram" href="https://www.instagram.com" aria-label="Instagram">
+        <ul class="social-list">
+          <li class="social-list__item">
+            <a class="social-list__link social-list__link--instagram" href="https://www.instagram.com" aria-label="Instagram">
               <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21.769px" height="21.334px" viewBox="53.115 53.19 21.769 21.334" enable-background="new 53.115 53.19 21.769 21.334" xml:space="preserve">
                 <g id="instagram">
                   <g>
@@ -214,8 +268,8 @@
               </svg>
             </a>
           </li>
-          <li class="social__item">
-            <a class="social__link social__link--facebook" href="https://www.facebook.com" aria-label="Facebook">
+          <li class="social-list__item">
+            <a class="social-list__link social-list__link--facebook" href="https://www.facebook.com" aria-label="Facebook">
               <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="14.962px" height="27.718px" viewBox="56.519 49.996 14.962 27.718" enable-background="new 56.519 49.996 14.962 27.718" xml:space="preserve">
                 <g id="facebook">
                   <g>
@@ -225,8 +279,8 @@
               </svg>
             </a>
           </li>
-          <li class="social__item">
-            <a class="social__link social__link--twitter" href="https://twitter.com" aria-label="Twitter">
+          <li class="social-list__item">
+            <a class="social-list__link social-list__link--twitter" href="https://twitter.com" aria-label="Twitter">
               <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="23.494px" height="20.168px" viewBox="52.253 53.771 23.494 20.168" enable-background="new 52.253 53.771 23.494 20.168" xml:space="preserve">
                 <g id="twitter">
                   <g>

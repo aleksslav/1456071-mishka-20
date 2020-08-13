@@ -1,0 +1,22 @@
+
+.stock-navigation {
+  @media (max-width: @desktop-width) {
+    display: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0;
+    padding-left: 50px;
+    order: 4;
+    flex-grow: 1;
+    justify-content: flex-start;
+    border-bottom: none;
+
+    a {
+      font-size: 15px;
+      padding-right: 62px;
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+  }
+}

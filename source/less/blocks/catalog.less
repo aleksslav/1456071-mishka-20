@@ -1,0 +1,27 @@
+.catalog {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 30px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 80px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 129px;
+    padding-bottom: 3px;
+  }
+}
+
+.catalog__product-card {
+  margin: 0 auto 30px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 54px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0 0 54px;
+  }
+}

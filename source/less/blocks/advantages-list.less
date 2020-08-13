@@ -1,0 +1,192 @@
+.advantages-list {
+  margin: 0;
+  margin-top: 5px;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  @media (min-width: @desktop-width) {
+    justify-content: flex-start;
+  }
+}
+
+.advantages-list__item {
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 20px;
+  color: @basic-black;
+  list-style: none;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 22px;
+    width: 334px;
+  }
+
+  &--ecology {
+    order: 0;
+    padding-bottom: 27px;
+
+    @media (min-width: @tablet-width) {
+      padding-bottom: 30px;
+    }
+  }
+
+  &--ecology-icon {
+    padding-top: 2px;
+    padding-left: 8px;
+    padding-bottom: 14px;
+
+    @media (min-width: @tablet-width) {
+      padding-top: 18px;
+      padding-left: 9px;
+      padding-bottom: 15px;
+    }
+  }
+
+  &--stylishly {
+    padding-bottom: 33px;
+
+    @media (min-width: @tablet-width) {
+      order: 2;
+      padding-bottom: 30px;
+    }
+  }
+
+  &--stylishly-icon {
+    padding-top: 2px;
+    padding-left: 1px;
+    padding-bottom: 23px;
+
+    @media (min-width: @tablet-width) {
+      padding-top: 25px;
+      padding-left: 2px;
+      padding-bottom: 22px;
+    }
+  }
+
+  &--like {
+    padding-bottom: 30px;
+
+    @media (min-width: @tablet-width) {
+      order: 5;
+      padding-bottom: 30px;
+    }
+  }
+
+  &--like-icon {
+    padding-top: 1px;
+    padding-left: 9px;
+    padding-bottom: 18px;
+
+    @media (min-width: @tablet-width) {
+      padding-top: 28px;
+      padding-left: 9px;
+      padding-bottom: 18px;
+    }
+  }
+
+  &--bind {
+    padding-bottom: 31px;
+
+    @media (min-width: @tablet-width) {
+      padding-bottom: 32px;
+    }
+
+    @media (min-width: @desktop-width) {
+      padding-left: 16px;
+    }
+  }
+
+  &--bind-icon {
+    padding-top: 1px;
+    padding-left: 4px;
+    padding-bottom: 14px;
+
+    @media (min-width: @tablet-width) {
+      padding-top: 21px;
+      padding-left: 2px;
+      padding-bottom: 15px;
+    }
+
+    @media (min-width: @desktop-width) {
+      padding-left: 4px;
+    }
+  }
+
+  &--support {
+    padding-bottom: 31px;
+
+    @media (min-width: @tablet-width) {
+      padding-bottom: 32px;
+      order: 3;
+    }
+
+    @media (min-width: @desktop-width) {
+      padding-left: 16px;
+    }
+  }
+
+  &--support-icon {
+    padding-top: 1px;
+    padding-left: 0;
+    padding-bottom: 22px;
+
+    @media (min-width: @tablet-width) {
+      padding-top: 29px;
+      padding-left: 0;
+      padding-bottom: 24px;
+    }
+
+    @media (min-width: @desktop-width) {
+      padding-top: 26px;
+    }
+  }
+
+  &--package {
+    padding-bottom: 15px;
+
+    @media (min-width: @tablet-width) {
+      padding-bottom: 32px;
+      order: 6;
+    }
+
+    @media (min-width: @desktop-width) {
+      padding-left: 16px;
+    }
+  }
+
+  &--package-icon {
+    padding-top: 1px;
+    padding-left: 4px;
+    padding-bottom: 17px;
+
+    @media (min-width: @tablet-width) {
+      padding-top: 24px;
+      padding-left: 3px;
+      padding-bottom: 17px;
+    }
+
+    @media (min-width: @desktop-width) {
+      padding-left: 4px;
+      padding-top: 26px;
+    }
+  }
+}
+
+.advantages-list__item--icon {
+  fill: @basic-downy;
+}
+
+.advantages-list__description {
+  margin: 0;
+  padding: 0;
+}

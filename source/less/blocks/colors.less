@@ -1,0 +1,47 @@
+
+.colors__label {
+  padding-bottom: 23px;
+  position: relative;
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 2px;
+    width: 36px;
+    height: 36px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: @basic-downy;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    display: none;
+    left: 9px;
+    top: 15px;
+    transform: rotate(-45deg);
+    width: 20px;
+    height: 9px;
+    border-left: 2px solid @basic-black;
+    border-bottom: 2px solid @basic-black;
+  }
+
+  &:hover::before {
+    border-color: @basic-black;
+  }
+
+  &:active::before {
+    border-color: @basic-black;
+  }
+
+  .colors__input:checked + &::after {
+    display: block;
+  }
+}
+
+.colors__input {
+  display: none;
+}

@@ -1,0 +1,35 @@
+.map {
+  position: relative;
+  overflow: hidden;
+  height: 454px;
+}
+
+.map__image {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+  width: 320px;
+  height: 454px;
+
+  @media (min-width: @tablet-width) {
+    width: 768px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 527px;
+    z-index: 10;
+  }
+}
+
+.map__marker {
+  position: absolute;
+  z-index: 10;
+  left: 43%;
+  top: 51%;
+  width: 67px;
+  height: 100px;
+  background-image: url("../img/icon-map-pin.svg");
+  background-size: 67px 100px;
+  background-repeat: no-repeat;
+}

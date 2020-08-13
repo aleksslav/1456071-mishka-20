@@ -1,0 +1,143 @@
+.form__content {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  border: none;
+}
+
+.form__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.form__input {
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: 400;
+  border: none;
+
+  &::after {
+    content: "";
+    flex-grow: 1;
+    margin-left: 25px;
+    height: 1px;
+    background-color: @basic-downy;
+  }
+}
+
+.form__input-wrapper {
+  padding: 0;
+  margin: 0;
+}
+
+.form__input-wrapper--content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.form__input--textarea {
+  min-width: 260px;
+  min-height: 142px;
+  border: 2px solid @basic-tundora;
+}
+
+.form__legend {
+  display: block;
+  padding: 0;
+  padding-bottom: 24px;
+  width: 100%;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 17px;
+  color: @basic-downy;
+  text-transform: uppercase;
+}
+
+.form__legend-text {
+  display: flex;
+  align-items: center;
+
+  &::after {
+    content: "";
+    flex-grow: 1;
+    margin-left: 25px;
+    height: 1px;
+    background-color: @basic-downy;
+
+    @media (min-width: @tablet-width) {
+      content: none;
+    }
+  }
+}
+
+.form__label {
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 18px;
+  display: flex;
+  align-items: center;
+  padding-left: 60px;
+}
+
+.form__content-wrapper {
+  display: grid;
+
+  @media (min-width: @tablet-width) {
+    grid-template-columns: 1fr 2fr;
+  }
+}
+
+.colors__list {
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.form__colors {
+  @media (min-width: @tablet-width) {
+    background-color: @basic-gray;
+  }
+}
+
+.form__contacts {
+  @media (min-width: @tablet-width) {
+    background-color: @basic-gray;
+  }
+}
+
+.form__input--contacts {
+  @media (min-width: @tablet-width) {
+    background-color: @basic-gray;
+  }
+}
+
+.form__required-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.filter-column__button {
+  @media (min-width: @tablet-width) {
+    margin: 0;
+  }
+}
+

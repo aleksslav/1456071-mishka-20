@@ -1,4 +1,5 @@
 .popular-product {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -7,11 +8,55 @@
 
   @media (min-width: @tablet-width) {
     display: block;
-    margin-bottom: 52px;
+    margin: 0;
+    @features-shift: -64px;
+    top: @features-shift;
   }
 
   @media (min-width: @desktop-width) {
     margin-bottom: 52px;
+  }
+}
+
+.popular-product__content-wrapper {
+  padding-top: 27px;
+  padding-bottom: 23px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 51px;
+    padding-bottom: 63px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 131px;
+    padding-bottom: 92px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 7px;
+    background-image: url("../img/bg-zigzag-line.svg");
+    background-size: 320px 7px;
+    background-position-x: 2px;
+    background-repeat: repeat-x;
+
+    @media (min-width: @tablet-width) {
+      height: 17px;
+      background-size: 768px 17px;
+      background-position-x: 0;
+    }
+
+    @media (min-width: @desktop-width) {
+      left: 50px;
+      right: 50px;
+      height: 23px;
+      background-size: 1050px 21px;
+      background-position-x: 1px;
+    }
   }
 }
 
@@ -71,12 +116,11 @@
 .popular-product__title--week {
   margin: 0;
   padding: 0;
-  margin-top: 4px;
   margin-bottom: 17px;
   font-size: 17px;
   font-weight: 700;
   line-height: 20px;
-  color: @basic-aquamarine;
+  color: @basic-downy;
   text-transform: uppercase;
 
   @media (min-width: @tablet-width) {
@@ -95,86 +139,29 @@
   }
 }
 
-.popular-product__content {
-  @media (min-width: @tablet-width) {
-    max-width: 292px;
-  }
-
-  @media (min-width: @desktop-width) {
-    padding-left: 175px;
-  }
-}
-
 .popular-product__description {
   margin: 0;
   padding: 0;
-  margin-bottom: 28px;
+  margin-bottom: 22px;
   font-size: 15px;
   line-height: 24px;
   font-weight: 400;
-  color: @font-basic-dark;
+  color: @basic-tundora;
 
   @media (min-width: @tablet-width) {
     font-size: 17px;
     line-height: 30px;
-    margin-bottom: 48px;
-  }
-
-  @media (min-width: @tablet-width) {
-    margin-bottom: 50px;
-  }
-}
-
-.popular-product__list {
-  margin: 0;
-  padding: 0;
-  margin-bottom: 28px;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-
-  @media (min-width: @tablet-width) {
-    margin-bottom: 32px;
+    margin-bottom: 28px;
   }
 
   @media (min-width: @desktop-width) {
-    margin-bottom: 75px;
+    margin-bottom: 36px;
+    margin-left: 175px;
+    width: 292px;
   }
 }
 
-.popular-product__item {
-  font-size: 15px;
-  line-height: 20px;
-  font-weight: 400;
-  color: @font-basic-dark;
-  padding-top: 2px;
-  padding-bottom: 10px;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  border-bottom: 1px solid @border-bottom-color;
-
-  @media (min-width: @tablet-width) {
-    padding-top: 5px;
-    padding-bottom: 10px;
-  }
-
-  @media (min-width: @desktop-width) {
-    padding-top: 10px;
-    padding-bottom: 12px;
-  }
-}
-
-.popular-product__property {
-  min-width: 97px;
-}
-
-.popular-product__value {
-  margin: 0;
-  padding: 0;
-}
-
-.popular-product__picture {
+.popular-product__image-wrapper {
   margin: 0 auto;
   width: 260px;
   height: 315px;
@@ -216,28 +203,43 @@
   margin: 0;
   padding: 0;
   margin-top: 25px;
-  margin-bottom: 25px;
+  margin-bottom: 15px;
   font-size: 17px;
   line-height: 24px;
   font-weight: 700;
   text-align: center;
-  color: @font-basic-dark;
+  color: @basic-tundora;
 
   @media (min-width: @tablet-width) {
     width: 333px;
     font-size: 20px;
     line-height: 24px;
-    margin-bottom: 33px;
-  }
-}
-
-.popular-product__cost {
-  @media (min-width: @tablet-width) {
+    margin-bottom: 22px;
     max-width: 292px;
   }
 
   @media (min-width: @desktop-width) {
-    padding-left: 175px;
+    margin-top: 32px;
+    margin-left: 175px;
+  }
+}
+
+.popular-product__order {
+  margin: 0;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 700;
+  text-align: center;
+
+  @media (min-width: @tablet-width) {
+    max-width: 292px;
+    margin-bottom: 5px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 175px;
   }
 }
 

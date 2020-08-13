@@ -1,0 +1,42 @@
+.site-list {
+  @media (min-width: @tablet-width) {
+    order: 1;
+    margin: 0;
+    padding: 0;
+    padding-left: 50px;
+    padding-right: 13px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    a {
+      font-size: 15px;
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0;
+    padding-left: 50px;
+    order: 1;
+    justify-content: flex-start;
+    flex-grow: 1;
+
+    a {
+      font-size: 17px;
+      padding-top: 32px;
+      padding-bottom: 32px;
+    }
+
+    li:first-child {
+      padding-right: 35px;
+      border-right: 1px solid @special-gallery;
+    }
+
+    li:last-child {
+      padding-left: 35px;
+    }
+  }
+}
+
