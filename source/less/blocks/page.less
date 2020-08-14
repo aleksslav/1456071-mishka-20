@@ -1,5 +1,6 @@
 .page {
   height: 100%;
+  box-sizing: border-box;
   font-size: 17px;
   font-family: "Open Sans", "Arial", sans-serif;
   line-height: 30px;
@@ -10,4 +11,11 @@
   margin: 0;
   background-color: @basic-white;
   color: @basic-black;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
+
+  @media (min-width: @tablet-width) {
+    grid-template-rows: 87px 1fr min-content;
+  }
 }

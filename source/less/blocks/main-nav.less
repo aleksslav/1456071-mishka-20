@@ -6,7 +6,11 @@
 
   @media (min-width: @tablet-width) {
     display: grid;
-    grid-template-columns: 370px 400px;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 87px 64px;
+    grid-auto-columns: 50% 50%;
+    grid-auto-rows: 50% 50%;
+    grid-auto-flow: row;
   }
 
   @media (min-width: @desktop-width) {
@@ -27,7 +31,6 @@
   padding-right: 30px;
   padding-bottom: 21px;
   padding-left: 30px;
-  border-bottom: 1px solid @special-gallery;
 
   @media (min-width: @tablet-width) {
     justify-content: flex-start;
@@ -151,4 +154,3 @@
     order: 5;
   }
 }
-

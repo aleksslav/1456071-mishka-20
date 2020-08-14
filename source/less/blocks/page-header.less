@@ -1,7 +1,23 @@
 .page-header {
+  position: relative;
   display: flex;
   flex-direction: column;
   background-color: @basic-white;
   color: @basic-black;
   text-align: center;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 78px;
+    right: 0;
+    left: 0;
+    height: 1px;
+    width: auto;
+    background-color: @special-gallery;
+
+    @media (min-width: @tablet-width) {
+      top: 86px;
+    }
+  }
 }
