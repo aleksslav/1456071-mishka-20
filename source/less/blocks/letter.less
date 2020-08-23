@@ -1,0 +1,50 @@
+.letter {
+  padding-bottom: 7px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 42px;
+    padding-bottom: 43px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 39px;
+  }
+}
+
+.letter__content-wrapper {
+  padding-left: 32px;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 50px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-right: 225px;
+    grid-template-columns: 20% 80%;
+  }
+}
+
+.letter__input--textarea {
+  padding-left: 17px;
+  padding-top: 16px;
+  min-width: 263px;
+  min-height: 143px;
+  font-family: inherit;
+  border: 2px solid @basic-tundora;
+  box-sizing: border-box;
+
+  @media (min-width: @desktop-width) {
+    padding-left: 15px;
+    padding-top: 15px;
+  }
+}
+
+.letter__title {
+  padding-top: 5px;
+  padding-bottom: 21px;
+
+
+  @media (min-width: @tablet-width) {
+    padding-top: 19px;
+  }
+}

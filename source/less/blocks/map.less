@@ -1,7 +1,11 @@
 .map {
   position: relative;
   overflow: hidden;
-  height: 454px;
+  height: 457px;
+
+  @media (min-width: @desktop-width) {
+    position: absolute;
+  }
 }
 
 .map__image {
@@ -10,26 +14,27 @@
   top: 0;
   transform: translateX(-50%);
   width: 320px;
-  height: 454px;
+  height: 455px;
 
   @media (min-width: @tablet-width) {
     width: 768px;
+    height: 457px;
   }
 
   @media (min-width: @desktop-width) {
-    width: 527px;
-    z-index: 10;
+    width: 525px;
   }
 }
 
 .map__marker {
   position: absolute;
   z-index: 10;
-  left: 43%;
-  top: 51%;
-  width: 67px;
-  height: 100px;
+  left: 50%;
+  top: 50%;
+  transform: translate(calc(-50% + 11px), calc(-50% - 33px));
+  width: 66px;
+  height: 101px;
   background-image: url("../img/icon-map-pin.svg");
-  background-size: 67px 100px;
+  background-size: 66px 101px;
   background-repeat: no-repeat;
 }

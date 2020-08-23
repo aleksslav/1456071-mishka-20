@@ -1,0 +1,96 @@
+.form-cart {
+  box-sizing: border-box;
+  padding: 31px 30px 46px;
+  width: 320px;
+  border: 1px solid @modal-silver;
+  background-color: @basic-white;
+
+  @media (min-width: @tablet-width) {
+    width: 568px;
+  }
+}
+
+.form-cart__title {
+  margin: 0 auto 11px;
+  max-width: 160px;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 30px;
+  color: @basic-black;
+  text-align: center;
+  text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    margin: 0 0 15px;
+    max-width: none;
+    font-size: 30px;
+    line-height: 57px;
+  }
+}
+
+.form-cart__fieldset {
+  margin: 0;
+  padding: 23px 0;
+  border: 0;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 9px;
+    padding: 22px 78px;
+  }
+}
+
+.form-cart__legend {
+  padding: 0;
+  width: 100%;
+  line-height: 30px;
+  text-align: center;
+
+  @media (min-width: @tablet-width) {
+    font-size: 17px;
+  }
+}
+
+.form-cart__input-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 8px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 0;
+  }
+}
+
+.form-cart__label {
+  box-sizing: border-box;
+  padding: 16px 10px 15px;
+  width: 82px;
+  border: 2px solid @basic-tundora-opacity-01;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 16px;
+  text-align: center;
+
+  @media (min-width: @tablet-width) {
+    width: 112px;
+  }
+
+  &:hover {
+    border-color: @basic-tundora-opacity-03;
+  }
+
+  &:active {
+    border-color: @special-downy;
+  }
+}
+
+.form-cart__radio:checked + .form-cart__label {
+  border-color: @special-downy;
+}
+
+.form-cart__button {
+  @media (min-width: @tablet-width) {
+    width: 350px;
+    max-width: none;
+  }
+}

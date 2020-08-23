@@ -2,6 +2,7 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Мишка</title>
     <link href="css/style.css" rel="stylesheet">
   </head>
@@ -64,51 +65,51 @@
       <p class="page-main__text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
       <section class="filter-column">
         <form class="filter-column__form form" action="https://echo.htmlacademy.ru" method="post">
-          <div class="content-wrapper filter-column__content-wrapper">
-            <fieldset class="form__product-type form__content">
-              <div class="form__content-wrapper">
+          <div class="form__wrapper">
+            <fieldset class="form__product-type form__content product-type">
+              <div class="form__content-wrapper product-type__content-wrapper content-wrapper">
                 <legend class="product-type__title form__legend">
-                  <span class="form__legend-text">Тип</span>
+                  <span class="form__legend-text product-type__text">Тип</span>
                 </legend>
                 <ul class="product-type__list form__list">
-                  <li class="product-type__item">
+                  <li class="product-type__item form__item">
                     <input class="product-type__input form__input" type="radio" name="product-type" value="installed" id="accessories" checked>
-                    <label class="product-type__label form__label" for="accessories">Аксессуар для <br>интерьера</label>
+                    <label class="product-type__label form__label" for="accessories">Аксессуар для интерьера</label>
                   </li>
-                  <li class="product-type__item">
+                  <li class="product-type__item form__item">
                     <input class="product-type__input form__input" type="radio" name="product-type" value="not-installed" id="toys">
                     <label class="product-type__label form__label" for="toys">Детская игрушка</label>
                   </li>
                 </ul>
               </div>
             </fieldset>
-            <fieldset class="form__colors form__content colors">
-              <div class="form__content-wrapper">
+            <fieldset class="form__colors form__content colors ">
+              <div class="form__content-wrapper colors__content-wrapper content-wrapper">
                 <legend class="colors__title form__legend">
-                  <span class="form__legend-text">Цвет</span>
+                  <span class="form__legend-text colors__text">Цвет</span>
                 </legend>
                 <ul class="colors__list form__list">
-                  <li class="colors__item">
+                  <li class="colors__item form__item colors__item--color-white">
                     <input class="colors__input form__input" type="checkbox" name="color-white" id="white-color" checked>
                     <label class="colors__label form__label" for="white-color">Белый</label>
                   </li>
-                  <li class="colors__item">
+                  <li class="colors__item form__item colors__item--color-grey">
                     <input class="colors__input form__input" type="checkbox" name="color-grey" id="grey-color" checked>
                     <label class="colors__label form__label" for="grey-color">Серый</label>
                   </li>
-                  <li class="colors__item">
+                  <li class="colors__item form__item colors__item--color-tiffany">
                     <input class="colors__input form__input" type="checkbox" name="color-tiffany" id="tiffany-color">
                     <label class="colors__label form__label" for="tiffany-color">«Тиффани»</label>
                   </li>
-                  <li class="colors__item">
+                  <li class="colors__item form__item colors__item--color-black">
                     <input class="colors__input form__input" type="checkbox" name="color-black" id="black-color">
                     <label class="colors__label form__label" for="black-color">Черный</label>
                   </li>
-                  <li class="colors__item">
+                  <li class="colors__item form__item colors__item--color-pink">
                     <input class="colors__input form__input" type="checkbox" name="color-pink" id="pink-color">
                     <label class="colors__label form__label" for="pink-color">Розовый</label>
                   </li>
-                  <li class="colors__item">
+                  <li class="colors__item form__item colors__item--color-orange">
                     <input class="colors__input form__input" type="checkbox" name="color-orange" id="orange-color">
                     <label class="colors__label form__label" for="orange-color">Оранжевый</label>
                   </li>
@@ -116,63 +117,67 @@
               </div>
             </fieldset>
             <fieldset class="form__full-name form__content full-name">
-              <div class="form__content-wrapper">
+              <div class="form__content-wrapper full-name__content-wrapper content-wrapper">
                 <legend class="full-name__title form__legend">
-                  <span class="form__legend-text">ФИО</span>
+                  <span class="form__legend-text full-name__text">ФИО</span>
                 </legend>
                 <ul class="full-name__list form__list">
-                  <li class="full-name__item">
+                  <li class="full-name__item form__item">
                     <label class="full-name__label form__label" for="block-name">Имя:</label>
                     <input class="full-name__input form__input" id="block-name" type="text" name="name" placeholder="Введите ваше имя*" required>
                   </li>
-                  <li class="full-name__item">
+                  <li class="full-name__item form__item">
                     <label class="full-name__label form__label" for="block-surname">Фамилия:</label>
                     <input class="full-name__input form__input" id="block-surname" type="text" name="surname" placeholder="Укажите фамилию*" required>
                   </li>
-                  <li class="full-name__item">
+                  <li class="full-name__item form__item">
                     <label class="full-name__label form__label" for="block-patronymic">Отчество:</label>
                     <input class="full-name__input form__input" id="block-patronymic" type="text" name="patronymic" placeholder="Отчество, если желаете">
                   </li>
                 </ul>
               </div>
             </fieldset>
-            <fieldset class="form__contacts form__content contacts">
-              <div class="form__content-wrapper">
-                <label class="form__legend" for="block-phone">
-                  <span class="form__legend-text">Тел</span>
-                </label>
-                <p class="form__input-wrapper form__input-wrapper--content">
-                  <input class="form__input form__input--contacts" type="tel" id="block-phone" name="phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
-                  <svg class="form__input-image form__input-image--phone" version="1.1" id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="24.829px" height="24.333px" viewBox="0 0 24.829 24.333" enable-background="new 0 0 24.829 24.333" xml:space="preserve">
-                    <g>
-                      <g id="UrwUhy_2_">
-                        <g>
-                          <path d="M17.321,24.333c-0.371,0-0.744,0-1.115,0c-4.904-0.58-8.497-2.857-11.11-5.772C2.473,15.637,0.402,11.875,0,6.817 c0-0.453,0-0.906,0-1.358c0.091-0.921,0.544-1.55,1.067-2.086c0.65-0.666,1.63-1.522,2.522-1.553 c0.659-0.022,1.78,0.451,2.232,1.066c0.388,0.53,0.595,1.59,0.775,2.378c0.185,0.797,0.6,1.95,0.485,2.717 C6.905,9.177,5.317,9.684,4.85,10.553c1.551,3.721,4.089,6.456,7.472,8.345c0.847-0.465,1.595-1.864,2.767-1.892 c0.428-0.012,0.972,0.209,1.406,0.34c0.477,0.143,0.891,0.326,1.311,0.484c0.705,0.266,1.957,0.621,2.378,1.213 c0.433,0.61,0.681,1.608,0.581,2.231C20.571,22.508,18.538,23.877,17.321,24.333z"/>
+            <fieldset class="form__information form__content information">
+              <div class="form__content-wrapper information__content-wrapper content-wrapper">
+                <div class="form__content-wrapper--phone information__content-wrapper--phone">
+                  <label class="information__title information__title--phone form__legend" for="block-phone">
+                    <span class="form__legend-text information__text">Тел</span>
+                  </label>
+                  <p class="information__item form__item">
+                    <input class="form__input form__input--information information__input" type="tel" id="block-phone" name="phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
+                    <svg class="information__input-image information__input-image--phone" version="1.1" id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="24.829px" height="24.333px" viewBox="0 0 24.829 24.333" enable-background="new 0 0 24.829 24.333" xml:space="preserve">
+                      <g>
+                        <g id="UrwUhy_2_">
+                          <g>
+                            <path d="M17.321,24.333c-0.371,0-0.744,0-1.115,0c-4.904-0.58-8.497-2.857-11.11-5.772C2.473,15.637,0.402,11.875,0,6.817 c0-0.453,0-0.906,0-1.358c0.091-0.921,0.544-1.55,1.067-2.086c0.65-0.666,1.63-1.522,2.522-1.553 c0.659-0.022,1.78,0.451,2.232,1.066c0.388,0.53,0.595,1.59,0.775,2.378c0.185,0.797,0.6,1.95,0.485,2.717 C6.905,9.177,5.317,9.684,4.85,10.553c1.551,3.721,4.089,6.456,7.472,8.345c0.847-0.465,1.595-1.864,2.767-1.892 c0.428-0.012,0.972,0.209,1.406,0.34c0.477,0.143,0.891,0.326,1.311,0.484c0.705,0.266,1.957,0.621,2.378,1.213 c0.433,0.61,0.681,1.608,0.581,2.231C20.571,22.508,18.538,23.877,17.321,24.333z"/>
+                          </g>
                         </g>
+                        <path d="M12.529,1.528c5.949,0,10.771,4.822,10.771,10.771h1.529C24.829,5.507,19.323,0,12.529,0V1.528z"/>
+                        <path d="M12.529,9.327v1.552c0.785,0,1.421,0.636,1.421,1.42h1.553C15.502,10.657,14.172,9.327,12.529,9.327z"/>
+                        <path d="M12.529,6.246c3.345,0,6.056,2.71,6.056,6.054h1.588c0-4.22-3.422-7.641-7.644-7.641V6.246z"/>
                       </g>
-                      <path d="M12.529,1.528c5.949,0,10.771,4.822,10.771,10.771h1.529C24.829,5.507,19.323,0,12.529,0V1.528z"/>
-                      <path d="M12.529,9.327v1.552c0.785,0,1.421,0.636,1.421,1.42h1.553C15.502,10.657,14.172,9.327,12.529,9.327z"/>
-                      <path d="M12.529,6.246c3.345,0,6.056,2.71,6.056,6.054h1.588c0-4.22-3.422-7.641-7.644-7.641V6.246z"/>
-                    </g>
-                  </svg>
-                </p>
-                <label class="form__legend" for="block-mail">
-                  <span class="form__legend-text">E-mail</span>
-                </label>
-                <p class="form__input-wrapper form__input-wrapper--content">
-                  <input class="form__input form__input--contacts" type="email" id="block-mail" name="email" placeholder="Ваш Email*">
-                  <svg class="form__input-image form__input-image--email" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="32px" height="32px" viewBox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve">
-                      <path id="mail" fill="#333333" d="M28,5H4C1.791,5,0,6.792,0,9v13c0,2.209,1.791,4,4,4h24c2.209,0,4-1.791,4-4V9 C32,6.792,30.209,5,28,5z M2,10.25l6.999,5.25L2,20.75V10.25z M30,22c0,1.104-0.898,2-2,2H4c-1.103,0-2-0.896-2-2l7.832-5.875 l4.368,3.277c0.533,0.397,1.166,0.6,1.8,0.6c0.633,0,1.266-0.201,1.799-0.6l4.369-3.277L30,22L30,22z M30,20.75l-7-5.25l7-5.25 V20.75z M17.199,18.602c-0.35,0.263-0.763,0.4-1.199,0.4s-0.851-0.139-1.2-0.4L10.665,15.5l-0.833-0.625L2,9.001V9 c0-1.103,0.897-2,2-2h24c1.102,0,2,0.897,2,2L17.199,18.602z"/>
-                  </svg>
-                </p>
+                    </svg>
+                  </p>
+                </div>
+                <div class="form__content-wrapper--email  information__content-wrapper--email">
+                  <label class="information__title information__title--email form__legend" for="block-mail">
+                    <span class="form__legend-text contacts__text">E-mail</span>
+                  </label>
+                  <p class="information__item form__item">
+                    <input class="form__input  form__input--information information__input" type="email" id="block-mail" name="email" placeholder="Ваш Email*">
+                    <svg class="information__input-image information__input-image--email" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="32px" height="32px" viewBox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve">
+                        <path id="mail" fill="#333333" d="M28,5H4C1.791,5,0,6.792,0,9v13c0,2.209,1.791,4,4,4h24c2.209,0,4-1.791,4-4V9 C32,6.792,30.209,5,28,5z M2,10.25l6.999,5.25L2,20.75V10.25z M30,22c0,1.104-0.898,2-2,2H4c-1.103,0-2-0.896-2-2l7.832-5.875 l4.368,3.277c0.533,0.397,1.166,0.6,1.8,0.6c0.633,0,1.266-0.201,1.799-0.6l4.369-3.277L30,22L30,22z M30,20.75l-7-5.25l7-5.25 V20.75z M17.199,18.602c-0.35,0.263-0.763,0.4-1.199,0.4s-0.851-0.139-1.2-0.4L10.665,15.5l-0.833-0.625L2,9.001V9 c0-1.103,0.897-2,2-2h24c1.102,0,2,0.897,2,2L17.199,18.602z"/>
+                    </svg>
+                  </p>
+                </div>
               </div>
             </fieldset>
             <fieldset class="form__letter form__content letter">
-              <div class="form__content-wrapper">
-                <label class="form__legend" for="block-letter">
-                  <span class="form__legend-text">Доп</span>
+              <div class="form__content-wrapper letter__content-wrapper content-wrapper">
+                <label class="letter__title form__legend" for="block-letter">
+                  <span class="letter__legend-text form__legend-text">Доп</span>
                 </label>
-                <textarea class="form__input form__input--textarea" id="block-letter" type="text" name="letter" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+                <textarea class=" letter__input--textarea form__input form__input--textarea" id="block-letter" type="text" name="letter" placeholder="Опишите все ваши пожелания к заказу"></textarea>
               </div>
             </fieldset>
             <div class="form__required-wrapper">
@@ -185,7 +190,7 @@
     </main>
     <footer class="page-footer">
       <div class="page-footer__wrapper content-wrapper">
-        <a class="page-footer__logo footer-logo" aria-label="Мишка">
+        <a class="page-footer__logo footer-logo" href="index.html" aria-label="Мишка">
           <svg class="footer-logo__image" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="101.615px" height="34.056px" viewBox="0 0 101.615 34.056" enable-background="new 0 0 101.615 34.056" xml:space="preserve">
             <g>
               <path d="M19.135,21.495c-0.083-2.683-0.51-5.347-0.475-8.035c0.028-2.174,0.389-4.41-0.36-6.495 c0.047-0.237,0.096-0.473,0.14-0.711c0.193-1.045-3.271-0.492-3.813,0.464c-0.343,0.28-0.519,0.615-0.375,0.957 c0.037,0.086,0.069,0.174,0.102,0.261c-0.656,3.204-1.57,6.306-2.621,9.412c-0.402,1.188-0.888,2.349-1.298,3.533 c-0.582-1.104-1.169-2.194-1.643-3.377C7.418,14.071,6.18,10.602,4.505,7.298C4.695,5.77,1.301,5.93,0.632,7.33 c-0.809,1.694-0.705,3.403-0.438,5.214c0.3,2.042,0.353,4.05,0.377,6.111c0.047,3.976,0.358,7.943,0.417,11.919 c-0.354,0.395-0.461,0.881-0.091,1.375c0.162,0.216,0.361,0.382,0.571,0.549c0.904,0.724,3.5,0.107,3.496-1.271 c-0.014-4.123-0.312-8.238-0.42-12.358c-0.011-0.404-0.018-0.807-0.024-1.21c0.057,0.145,0.114,0.29,0.171,0.434 c0.64,1.604,1.31,3.163,2.185,4.654c0.868,1.478,1.303,3.064,1.803,4.677c-0.189,0.217-0.303,0.462-0.233,0.708 c-0.039,0.18,0.07,0.292,0.251,0.36c0.639,0.548,1.841,0.274,2.509-0.007c0.287-0.121,0.561-0.261,0.826-0.424 c0.345-0.212,0.883-0.679,0.729-1.159c-0.03-0.093-0.058-0.186-0.087-0.279c0.47-1.27,0.709-2.589,0.965-3.93 c0.272-1.428,0.782-2.78,1.295-4.133c0.052,0.619,0.106,1.238,0.156,1.855c0.204,2.554,0.033,5.072,0.007,7.626 c-0.008,0.847,0.054,1.633,0.219,2.461c0.068,0.343,0.367,1.808,0.281,1.887c-0.611,0.564-0.433,1.257,0.385,1.437 c0.915,0.201,2.081-0.105,2.77-0.742c1.198-1.106,0.632-2.845,0.361-4.241C18.661,26.501,19.208,23.879,19.135,21.495z"/>
@@ -243,21 +248,6 @@
         </div>
       </div>
     </footer>
-    <script>
-      var navMain = document.querySelector('.main-nav');
-      var navToggle = document.querySelector('.main-nav__toggle');
-
-      navMain.classList.remove('main-nav--nojs');
-
-      navToggle.addEventListener('click', function() {
-        if (navMain.classList.contains('main-nav--closed')) {
-          navMain.classList.remove('main-nav--closed');
-          navMain.classList.add('main-nav--opened');
-        } else {
-          navMain.classList.add('main-nav--closed');
-          navMain.classList.remove('main-nav--opened');
-        }
-      });
-    </script>
+    <script src="js/script.js"></script>
   </body>
 </html>

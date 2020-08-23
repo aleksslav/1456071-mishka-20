@@ -7,12 +7,18 @@
   list-style: none;
 
   padding-bottom: 19px;
-  border-bottom: 1px solid @basic-downy;
+  border-bottom: 1px solid @special-gray;
 
   @media (min-width: @tablet-width) {
     padding-bottom: 0;
     border-bottom: 0;
     width: 300px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 159px;
+    justify-content: space-between;
+    justify-self: center;
   }
 }
 
@@ -22,8 +28,17 @@
   align-items: center;
   flex-wrap: wrap;
   margin: 0;
-  margin-right: 13px;
-  margin-left: 6px;
+  margin-right: 9px;
+  margin-left: 10px;
   width: 40px;
   height: 40px;
+
+  @media (min-width: @tablet-width) {
+    margin-right: 9px;
+    margin-left: 10px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0;
+  }
 }

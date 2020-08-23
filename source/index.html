@@ -234,8 +234,9 @@
             <source media="(min-width: 770px)" srcset="img/map-tablet@1x.jpg">
             <img class="map__image" src="img/map-mobile@1x.jpg" alt="г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101">
           </picture>
+          <div class="map__marker"></div>
+          <div class="map__interactive" id="map"></div>
         </div>
-        <div class="map__marker"></div>
         <div class="contacts__button-wrapper content-wrapper">
           <a class="contacts__button button" href="#">Напишите нам</a>
         </div>
@@ -301,21 +302,24 @@
         </div>
       </div>
     </footer>
-    <script>
-      var navMain = document.querySelector('.main-nav');
-      var navToggle = document.querySelector('.main-nav__toggle');
+    <div class="modal-overlay page__overlay">
+      <form class="form-cart modal-overlay__form-cart" action="https://echo.htmlacademy.ru" method="POST">
+        <h2 class="form-cart__title">Добавить в корзину</h2>
 
-      navMain.classList.remove('main-nav--nojs');
-
-      navToggle.addEventListener('click', function() {
-        if (navMain.classList.contains('main-nav--closed')) {
-          navMain.classList.remove('main-nav--closed');
-          navMain.classList.add('main-nav--opened');
-        } else {
-          navMain.classList.add('main-nav--closed');
-          navMain.classList.remove('main-nav--opened');
-        }
-      });
-    </script>
+        <fieldset class="form-cart__fieldset">
+          <legend class="form-cart__legend">Выберите размер:</legend>
+          <div class="form-cart__input-wrapper">
+            <input class="form-cart__radio visually-hidden" type="radio" id="size-s" name="size" value="1" checked>
+            <label class="form-cart__label" for="size-s">S</label>
+            <input class="form-cart__radio visually-hidden" type="radio" id="size-m" name="size" value="2">
+            <label class="form-cart__label" for="size-m">M</label>
+            <input class="form-cart__radio visually-hidden" type="radio" id="size-l" name="size" value="3">
+            <label class="form-cart__label" for="size-l">L</label>
+          </div>
+        </fieldset>
+        <button class="form-cart__button button button--green" type="submit">Добавить</button>
+      </form>
+    </div>
+    <script src="js/script.js"></script>
   </body>
 </html>

@@ -4,6 +4,14 @@
   cursor: pointer;
   fill: @basic-black;
 
+  &[href]:hover {
+    opacity: 0.6;
+  }
+
+  &[href]:active {
+    opacity: 0.3;
+  }
+
   @media (min-width: @tablet-width) {
     width: 113px;
     height: 46px;
@@ -14,7 +22,6 @@
     height: 72px;
   }
 }
-
 
 .header-logo__image {
   width: 86px;

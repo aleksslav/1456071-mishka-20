@@ -11,13 +11,13 @@
   background-color: @basic-gray;
 
   @media (min-width: @tablet-width) {
-    padding-top: 36px;
-    padding-bottom: 79px;
+    padding-top: 37px;
+    padding-bottom: 72px;
   }
 
   @media (min-width: @desktop-width) {
     padding-top: 34px;
-    padding-bottom: 102px;
+    padding-bottom: 100px;
   }
 
   &::after {
@@ -55,7 +55,7 @@
   @media (min-width: @tablet-width) {
     font-size: 43px;
     line-height: 50px;
-    padding-top: 64px;
+    padding-top: 66px;
   }
 
   @media (min-width: @desktop-width) {
@@ -65,8 +65,24 @@
 }
 
 .page-main__text {
-  margin: 17px auto 17px;
-  padding: 0 30px;
+  margin: 17px auto 7px;
+  padding: 0 34px;
+  font-size: 13px;
+  line-height: 24px;
+  font-weight: 400;
+  color: @basic-tundora;
+
+  @media (min-width: @tablet-width) {
+    margin: 63px auto 39px;
+    padding: 0 51px;
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0 225px;
+    margin: 113px auto 39px;
+  }
 }
 
 .page-main__video {
