@@ -48,6 +48,15 @@
   width: 260px;
   border: 1px solid @special-gallery;
 
+  &:hover {
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  &:active {
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+  }
+
+
   @media (min-width: @tablet-width) {
     display: flex;
     flex-direction: column;

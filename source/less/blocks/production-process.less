@@ -94,14 +94,26 @@
   background-color: @special-gallery;
   background-repeat: no-repeat;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/video-mobile@2x.jpg");
+  }
+
   @media (min-width: @tablet-width) {
     background-image: url("../img/video-tablet@1x.jpg");
     background-size: image-size("../img/video-tablet@1x.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/video-tablet@2x.jpg");
+    }
   }
 
   @media (min-width: @desktop-width) {
     background-image: url("../img/video-desktop@1x.jpg");
     background-size: image-size("../img/video-desktop@1x.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/video-desktop@2x.jpg");
+    }
   }
 }
 
@@ -116,6 +128,15 @@
   background-image: url("../img/icon-play.svg");
   background-color: transparent;
   cursor: pointer;
+
+  &:hover {
+    transform: translate(-50%, -50%) scale(1.2);
+  }
+
+  &:active {
+    transform: translate(-50%, -50%) scale(0.8);
+    opacity: 0.8;
+  }
 }
 
 .production-process__description-wrapper {

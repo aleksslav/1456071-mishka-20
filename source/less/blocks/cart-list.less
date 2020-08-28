@@ -47,11 +47,17 @@
   top: 40%;
   width: 17px;
   height: 17px;
-  opacity: 0.2;
   fill: @basic-black;
+  opacity: 0.2;
 
-  &:active {
+  .cart-list__link:hover &,
+  .cart-list__link:active & {
     fill: @basic-downy;
+    opacity: 1;
+  }
+
+  .cart-list__link:active & {
+    fill-opacity: 0.3;
   }
 }
 

@@ -37,6 +37,25 @@
 
 .features-list__item--interior {
   background-color: @basic-downy;
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+  &:hover {
+    transform: translateY(-5px);
+
+    &::before {
+      bottom: -5px;
+      height: 5px;
+      background-color: @basic-downy;
+    }
+  }
 
   &-icon {
     padding-right: 7px;
@@ -46,9 +65,32 @@
 
 .features-list__item--toys {
   background-color: @basic-fountain-blue;
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+  &:hover {
+    transform: translateY(-5px);
+
+    &::before {
+      bottom: -5px;
+      height: 5px;
+      background-color: @basic-fountain-blue;
+    }
+  }
 
   &-icon {
     fill: @special-blue-chill;
+
+    &:hover {
+      opacity: 0.3;
+    }
 
     @media (min-width: @tablet-width) {
       padding-right: 4px;
