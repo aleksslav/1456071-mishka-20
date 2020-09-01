@@ -39,6 +39,12 @@
   background-color: @basic-downy;
   cursor: pointer;
 
+  &-icon {
+    fill: @special-blue-chill;
+    opacity: 0.5;
+    padding-right: 7px;
+  }
+
   &::before {
     content: "";
     position: absolute;
@@ -49,16 +55,34 @@
 
   &:hover {
     transform: translateY(-5px);
+    background-color: @special-viking;
+
+    .features-list__item--interior-icon {
+      fill: @special-blue-chill;
+      fill-opacity: 0.7;
+    }
 
     &::before {
       bottom: -5px;
       height: 5px;
-      background-color: @basic-downy;
+      background-color: @special-viking;
     }
   }
 
-  &-icon {
-    padding-right: 7px;
+  &:active {
+    transform: translateY(-5px);
+    background-color: @special-viking;
+
+    .features-list__item--interior-icon {
+      fill: @special-blue-chill;
+      fill-opacity: 0.3;
+    }
+
+    &::before {
+      bottom: -5px;
+      height: 5px;
+      background-color: @special-viking;
+    }
   }
 }
 
@@ -66,6 +90,16 @@
   background-color: @basic-fountain-blue;
   cursor: pointer;
 
+  &-icon {
+    fill: @special-blue-chill;
+    opacity: 0.5;
+
+    @media (min-width: @tablet-width) {
+      padding-right: 4px;
+      padding-top: 4px;
+    }
+  }
+
   &::before {
     content: "";
     position: absolute;
@@ -76,31 +110,33 @@
 
   &:hover {
     transform: translateY(-5px);
+    background-color: @special-fountain-blue;
+
+    .features-list__item--toys-icon {
+      fill: @special-blue-chill;
+      fill-opacity: 0.7;
+    }
 
     &::before {
       bottom: -5px;
       height: 5px;
-      background-color: @basic-fountain-blue;
+      background-color: @special-fountain-blue;
     }
-  }
-
-  &-icon {
-    @media (min-width: @tablet-width) {
-      padding-right: 4px;
-      padding-top: 4px;
-    }
-  }
-}
-
-.features-list__item-icon {
-  fill: @special-blue-chill;
-  opacity: 0.5;
-
-  &:hover {
-    opacity: 0.7;
   }
 
   &:active {
-    opacity: 0.3;
+    transform: translateY(-5px);
+    background-color: @special-fountain-blue;
+
+    .features-list__item--toys-icon {
+      fill: @special-blue-chill;
+      fill-opacity: 0.3;
+    }
+
+    &::before {
+      bottom: -5px;
+      height: 5px;
+      background-color: @special-fountain-blue;
+    }
   }
 }

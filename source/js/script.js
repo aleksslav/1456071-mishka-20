@@ -45,4 +45,3 @@ function closeOrderForm(event) {
     overlayModal.classList.remove('modal-overlay--opened');
   }
 }
-

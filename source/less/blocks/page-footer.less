@@ -29,11 +29,21 @@
 }
 
 .page-footer__logo {
+  fill: @basic-black;
   display: none;
+
+  &:hover {
+    fill: @special-fountain-blue;
+  }
+
+  &:active {
+    fill-opacity: 0.3;
+  }
 
   @media (min-width: @tablet-width) {
     display: block;
     margin-right: 83px;
+    cursor: pointer;
   }
 
   @media (min-width: @desktop-width) {

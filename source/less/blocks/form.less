@@ -40,7 +40,6 @@
   }
 }
 
-
 .form__list {
   list-style: none;
   margin: 0;
@@ -64,12 +63,25 @@
   font-size: 17px;
   line-height: 18px;
   font-weight: 400;
-  color: @basic-black-opacity-03;
+  color: @basic-tundora;
   border: none;
 
   @media (min-width: @tablet-width) {
     font-size: 19px;
     line-height: 18px;
+  }
+
+  &::placeholder {
+    color: @basic-tundora;
+    opacity: 0.3;
+  }
+
+  &:hover,
+  &:focus {
+    + .form__icon {
+      fill-opacity: 1;
+      fill: @special-downy;
+    }
   }
 
   &::after {
@@ -191,6 +203,7 @@
   width: 260px;
   font-size: 17px;
   line-height: 16px;
+  font-weight: 700;
   padding-top: 15px;
   padding-bottom: 15px;
 
@@ -200,4 +213,3 @@
     width: 230px;
   }
 }
-

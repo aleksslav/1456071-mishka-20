@@ -193,6 +193,7 @@
 .reviews__write {
   font-size: 18px;
   line-height: 20px;
+  font-weight: 700;
   padding-top: 14px;
   padding-bottom: 14px;
 
@@ -205,5 +206,18 @@
 
   @media (min-width: @desktop-width) {
     margin-top: 15px;
+  }
+}
+
+.reviews__icon {
+  fill: @basic-black;
+  outline: none;
+
+  &:hover {
+    fill-opacity: 0.6;
+  }
+
+  &:active {
+    fill-opacity: 0.3;
   }
 }

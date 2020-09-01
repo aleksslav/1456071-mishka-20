@@ -49,11 +49,11 @@
   border: 1px solid @special-gallery;
 
   &:hover {
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 6px 10px @basic-black-opacity-01;
   }
 
   &:active {
-    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 3px 5px @basic-black-opacity-01;
   }
 
 
@@ -80,6 +80,14 @@
   line-height: 24px;
   font-weight: 700;
   color: @basic-black;
+
+  &:hover {
+    color: @basic-black-opacity-06;
+  }
+
+  &:active {
+    color: @basic-black-opacity-03;
+  }
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
@@ -141,12 +149,12 @@
   overflow-x: hidden;
   width: 20px;
   height: 19px;
-  fill: @special-gallery;
+  fill: @basic-black-opacity-02;
   pointer-events: none;
 
   .product-card__button:hover &,
   .product-card__button:active & {
-    fill: @special-gallery;
+    fill: @basic-downy;
   }
 
   .product-card__button:active & {

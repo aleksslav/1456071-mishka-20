@@ -63,6 +63,14 @@
   padding-top: 4px;
   border-bottom: 2px solid @basic-black;
 
+  &:hover {
+    border-color: @special-downy;
+  }
+
+  &:active {
+    border-color: @special-downy;
+  }
+
   @media (min-width: @tablet-width) {
     padding: 0;
     padding-left: 19px;
@@ -76,8 +84,10 @@
 .information__input {
   position: relative;
   padding-bottom: 16px;
+  width: 100%;
 
   &-image {
+    fill: @basic-black-opacity-02;
     padding-right: 6px;
 
     @media (min-width: @tablet-width) {
@@ -95,4 +105,3 @@
     padding-bottom: 14px;
   }
 }
-
