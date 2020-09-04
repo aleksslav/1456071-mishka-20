@@ -9,14 +9,14 @@
     <link rel="preload" href="fonts/opensans.woff2" as="font" crossorigin>
     <link rel="preload" href="fonts/opensansbold.woff2" as="font" crossorigin>
   </head>
-  <body class="page__body">
+  <body class="page-body">
     <header class="page-header">
       <nav class="main-nav main-nav--closed main-nav--nojs">
         <div class="main-nav__logo-wrapper">
           <a class="main-nav__logo header-logo" href="index.html" aria-label="Мишка">
             <picture>
               <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
-              <source media="(min-width: 770px)" srcset="img/logo-tablet.svg">
+              <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
               <img class="header-logo__image" src="img/logo-mobile.svg" width="86" height="35" alt="Логотип сайта Мишка">
             </picture>
           </a>
@@ -212,6 +212,23 @@
         </div>
       </div>
     </footer>
+    <div class="modal-overlay page-overlay">
+      <form class="form-cart modal-overlay__form-cart" action="https://echo.htmlacademy.ru" method="POST">
+        <h2 class="form-cart__title">Добавить в корзину</h2>
+        <fieldset class="form-cart__fieldset">
+          <legend class="form-cart__legend">Выберите размер:</legend>
+          <div class="form-cart__input-wrapper">
+            <input class="form-cart__radio visually-hidden" type="radio" id="size-s" name="size" value="1" checked>
+            <label class="form-cart__label" for="size-s">S</label>
+            <input class="form-cart__radio visually-hidden" type="radio" id="size-m" name="size" value="2">
+            <label class="form-cart__label" for="size-m">M</label>
+            <input class="form-cart__radio visually-hidden" type="radio" id="size-l" name="size" value="3">
+            <label class="form-cart__label" for="size-l">L</label>
+          </div>
+        </fieldset>
+        <button class="form-cart__button button button--modal" type="submit">Добавить</button>
+      </form>
+    </div>
     <script src="js/script.js"></script>
   </body>
 </html>

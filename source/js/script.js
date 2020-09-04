@@ -1,5 +1,5 @@
-var navMain = document.querySelector('.main-nav');
-var navToggle = document.querySelector('.main-nav__toggle');
+const navMain = document.querySelector('.main-nav');
+const navToggle = document.querySelector('.main-nav__toggle');
 
 navMain.classList.remove('main-nav--nojs');
 
@@ -13,12 +13,15 @@ navToggle.addEventListener('click', function() {
   }
 });
 
-
 const overlayModal = document.querySelector('.modal-overlay');
-
+const catalogBlock = document.querySelector('.catalog');
 const orderButton = document.querySelector('.popular-product__order');
 
 if (overlayModal) {
+  if (catalogBlock) {
+    catalogBlock.addEventListener('click', openOrderForm);
+  }
+
   if (orderButton) {
     orderButton.addEventListener('click', openOrderForm);
   }
@@ -28,9 +31,10 @@ if (overlayModal) {
 }
 
 function openOrderForm(event) {
-  let element = event.target;
+  const element = event.target;
 
   if (
+    element.classList.contains('product-card__button') ||
     element.classList.contains('popular-product__order')
   ) {
     event.preventDefault();
@@ -39,9 +43,32 @@ function openOrderForm(event) {
 }
 
 function closeOrderForm(event) {
-  let element = event.target;
+  const element = event.target;
 
   if (element.classList.contains('modal-overlay') || event.keyCode === 27) {
     overlayModal.classList.remove('modal-overlay--opened');
   }
+}
+
+function init(ymaps) {
+  /*eslint-enable*/
+  let map = new ymaps.Map('map', {
+    center: [59.938635, 30.323118],
+    zoom: 15,
+    controls: ['zoomControl']
+  });
+
+  let placemark = new ymaps.Placemark(
+    [59.938635, 30.323118],
+    {},
+    {
+      iconLayout: 'default#image',
+      iconImageHref: 'img/icon-map-pin.svg',
+      iconImageSize: [66, 101],
+      iconImageOffset: [-33, -101]
+    }
+  );
+
+  map.behaviors.disable('scrollZoom');
+  map.geoObjects.add(placemark);
 }

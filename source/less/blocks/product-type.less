@@ -1,10 +1,86 @@
 
 .product-type__title {
-  padding-top: 3px;
-  padding-bottom: 34px;
+  margin-top: 3px;
+  margin-bottom: 34px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 0;
+  }
 }
 
-.product-type__label {
+.product-type__input {
+  display: none;
+}
+
+.product-type__label--accessories {
+  position: relative;
+  cursor: pointer;
+
+  &::after {
+    content: "";
+    position: absolute;
+    display: none;
+    top: 8px;
+    left: 16px;
+    width: 16px;
+    height: 16px;
+    background-color: @special-downy;
+    border-radius: 50%;
+
+    @media (min-width: @tablet-width) {
+      top: 0;
+      left: 18px;
+      width: 20px;
+      height: 20px;
+    }
+
+    @media (min-width: @desktop-width) {
+      top: -1px;
+      left: 23px;
+      width: 19px;
+      height: 19px;
+    }
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -3px;
+    left: 5px;
+    width: 34px;
+    height: 34px;
+    border: 2px solid @basic-black;
+    border-radius: 50%;
+
+    @media (min-width: @tablet-width) {
+      top: -15px;
+      left: 2px;
+      width: 47px;
+      height: 46px;
+    }
+
+    @media (min-width: @desktop-width) {
+      top: -16px;
+      left: 7px;
+      width: 47px;
+      height: 47px;
+    }
+  }
+
+  &:hover::before {
+    border-color: @special-downy;
+  }
+
+  &:active::before {
+    border-color: @basic-tundora-opacity-03;
+  }
+
+  .product-type__input:checked + &::after {
+    display: block;
+  }
+}
+
+.product-type__label--toys {
   position: relative;
   cursor: pointer;
 
@@ -27,8 +103,8 @@
     }
 
     @media (min-width: @desktop-width) {
-      top: 1px;
-      left: 22px;
+      top: -1px;
+      left: 23px;
       width: 19px;
       height: 19px;
     }
@@ -52,13 +128,12 @@
     }
 
     @media (min-width: @desktop-width) {
-      top: -15px;
-      left: 6px;
+      top: -16px;
+      left: 7px;
       width: 47px;
       height: 47px;
     }
   }
-
 
   &:hover::before {
     border-color: @special-downy;
@@ -71,8 +146,4 @@
   .product-type__input:checked + &::after {
     display: block;
   }
-}
-
-.product-type__input {
-  display: none;
 }

@@ -9,14 +9,14 @@
     <link rel="preload" href="fonts/opensans.woff2" as="font" crossorigin>
     <link rel="preload" href="fonts/opensansbold.woff2" as="font" crossorigin>
   </head>
-  <body class="page__body">
+  <body class="page-body">
     <header class="page-header">
       <nav class="main-nav main-nav--closed main-nav--nojs">
         <div class="main-nav__logo-wrapper">
           <a class="main-nav__logo header-logo" href="index.html" aria-label="Мишка">
             <picture>
               <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
-              <source media="(min-width: 770px)" srcset="img/logo-tablet.svg">
+              <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
               <img class="header-logo__image" src="img/logo-mobile.svg" width="86" height="35" alt="Логотип сайта Мишка">
             </picture>
           </a>
@@ -77,11 +77,11 @@
                 <ul class="product-type__list form__list">
                   <li class="product-type__item form__item">
                     <input class="product-type__input form__input" type="radio" name="product-type" value="installed" id="accessories" checked>
-                    <label class="product-type__label form__label" for="accessories">Аксессуар для интерьера</label>
+                    <label class="product-type__label product-type__label--accessories form__label" for="accessories">Аксессуар для интерьера</label>
                   </li>
                   <li class="product-type__item form__item">
                     <input class="product-type__input form__input" type="radio" name="product-type" value="not-installed" id="toys">
-                    <label class="product-type__label form__label" for="toys">Детская игрушка</label>
+                    <label class="product-type__label product-type__label--toys form__label" for="toys">Детская игрушка</label>
                   </li>
                 </ul>
               </div>
@@ -142,24 +142,24 @@
             </fieldset>
             <fieldset class="form__information form__content information">
               <div class="form__content-wrapper information__content-wrapper content-wrapper">
-                <div class="form__content-wrapper--phone information__content-wrapper--phone">
+                <div class="form__content-wrapper-phone information__content-wrapper-phone">
                   <label class="information__title information__title--phone form__title" for="block-phone">
                     <span class="form__text information__text">Тел</span>
                   </label>
                   <p class="information__item form__item">
                     <input class="form__input form__input--information information__input" type="tel" id="block-phone" name="phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
-                    <svg class="form__icon information__input-image information__input-image--phone"  width="24.8" height="24.3">
+                    <svg class="form__icon information__input-image information__input-image--phone"  width="24.8" height="32">
                       <use xlink:href="img/sprite.svg#icon-phone"></use>
                     </svg>
                   </p>
                 </div>
-                <div class="form__content-wrapper--email  information__content-wrapper--email">
+                <div class="form__content-wrapper-email  information__content-wrapper-email">
                   <label class="information__title information__title--email form__title" for="block-mail">
-                    <span class="form__text contacts__text">E-mail</span>
+                    <span class="form__text information__text">E-mail</span>
                   </label>
                   <p class="information__item form__item">
                     <input class="form__input  form__input--information information__input" type="email" id="block-mail" name="email" placeholder="Ваш Email*">
-                    <svg class="form__icon information__input-image information__input-image--email"  width="32" height="32">
+                    <svg class="form__icon information__input-image information__input-image--email"  width="40" height="32">
                       <use xlink:href="img/sprite.svg#icon-mail"></use>
                     </svg>
                   </p>
@@ -171,7 +171,7 @@
                 <label class="letter__title form__title" for="block-letter">
                   <span class="letter__text form__text">Доп</span>
                 </label>
-                <textarea class="letter__input--textarea form__input form__input--textarea" id="block-letter" name="letter" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+                <textarea class="letter__textarea form__input form__input--textarea" id="block-letter" name="letter" placeholder="Опишите все ваши пожелания к заказу"></textarea>
               </div>
             </fieldset>
             <div class="form__required-wrapper">

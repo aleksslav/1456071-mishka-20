@@ -9,7 +9,7 @@
     <link rel="preload" href="fonts/opensans.woff2" as="font" crossorigin>
     <link rel="preload" href="fonts/opensansbold.woff2" as="font" crossorigin>
   </head>
-  <body class="page__body">
+  <body class="page-body">
     <header class="page-header">
       <nav class="main-nav main-nav--closed main-nav--nojs">
         <div class="main-nav__logo-wrapper">
@@ -71,7 +71,7 @@
               <a class="features-list__title">
                 <span>Предметы <br> интерьера</span>
               </a>
-              <svg class="features-list__item--interior-icon features-list__item-icon" width="40.2" height="62.4">
+              <svg class="features-list__icon features-list__icon--interior" width="40.2" height="62.4">
                 <use xlink:href="img/sprite.svg#icon-interior"></use>
               </svg>
             </li>
@@ -79,7 +79,7 @@
               <a class="features-list__title">
                 <span>Детские <br> игрушки</span>
               </a>
-              <svg class="features-list__item--toys-icon features-list__item-icon" width="60" height="59.6">
+              <svg class="features-list__icon features-list__icon--toys" width="60" height="59.6">
                 <use xlink:href="img/sprite.svg#icon-toy"></use>
               </svg>
             </li>
@@ -90,7 +90,7 @@
         <div class="popular-product__content-wrapper">
           <header class="popular-product__header">
             <h2 class="popular-product__title">Вязаные корзинки</h2>
-            <h3 class="popular-product__title--week">Товар Недели</h3>
+            <h3 class="popular-product__title-week">Товар Недели</h3>
           </header>
           <div class="popular-product__wrapper">
             <p class="popular-product__description">Экологически чистая пряжа,<br>
@@ -130,37 +130,37 @@
           <h2 class="advantages__title">Коротко о нас:</h2>
           <ul class="advantages__list advantages-list">
             <li class="advantages-list__item advantages-list__item--ecology">
-              <svg class="advantages-list__item--icon advantages-list__item--ecology-icon" width="31.9" height="37.3">
+              <svg class="advantages-list__icon advantages-list__icon--ecology" width="31.9" height="37.3">
                 <use xlink:href="img/sprite.svg#icon-feature-flower"></use>
               </svg>
               <p class="advantages-list__description">Экологически <br>чистые материалы</p>
             </li>
             <li class="advantages-list__item advantages-list__item--stylishly">
-              <svg class="advantages-list__item--icon advantages-list__item--stylishly-icon" width="46.6" height="27.33">
+              <svg class="advantages-list__icon advantages-list__icon--stylishly" width="46.6" height="27.33">
                 <use xlink:href="img/sprite.svg#icon-feature-money"></use>
               </svg>
               <p class="advantages-list__description">Скандинавский стиль <br>по российской цене</p>
             </li>
             <li class="advantages-list__item advantages-list__item--like">
-              <svg class="advantages-list__item--icon advantages-list__item--like-icon" width="33" height="27.8">
+              <svg class="advantages-list__icon advantages-list__icon--like" width="33" height="27.8">
                 <use xlink:href="img/sprite.svg#icon-feature-heart"></use>
               </svg>
               <p class="advantages-list__description">Увеличивает лайки<br>на фотографиях</p>
             </li>
             <li class="advantages-list__item advantages-list__item--bind">
-              <svg class="advantages-list__item--icon advantages-list__item--bind-icon" width="34.3" height="34.3">
+              <svg class="advantages-list__icon advantages-list__icon--bind" width="34.3" height="34.3">
                 <use xlink:href="img/sprite.svg#icon-feature-ball"></use>
               </svg>
               <p class="advantages-list__description">Связано вручную с <br>любовью и умилением</p>
             </li>
             <li class="advantages-list__item advantages-list__item--support">
-              <svg class="advantages-list__item--icon advantages-list__item--support-icon" width="54" height="23">
+              <svg class="advantages-list__icon advantages-list__icon--support" width="54" height="23">
                 <use xlink:href="img/sprite.svg#icon-feature-rocket"></use>
               </svg>
               <p class="advantages-list__description">Поддержка отечественного<br>производителя</p>
             </li>
             <li class="advantages-list__item advantages-list__item--package">
-              <svg class="advantages-list__item--icon advantages-list__item--package-icon" width="32.6" height="32.4">
+              <svg class="advantages-list__icon advantages-list__icon--package" width="32.6" height="32.4">
                 <use xlink:href="img/sprite.svg#icon-feature-gift"></use>
               </svg>
               <p class="advantages-list__description">Поставляется в <br>подарочной упаковке</p>
@@ -275,7 +275,7 @@
         </div>
       </div>
     </footer>
-    <div class="modal-overlay page__overlay">
+    <div class="modal-overlay page-overlay">
       <form class="form-cart modal-overlay__form-cart" action="https://echo.htmlacademy.ru" method="POST">
         <h2 class="form-cart__title">Добавить в корзину</h2>
         <fieldset class="form-cart__fieldset">
@@ -293,5 +293,6 @@
       </form>
     </div>
     <script src="js/script.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&onload=init" async></script>
   </body>
 </html>

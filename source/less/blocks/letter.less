@@ -2,12 +2,12 @@
   padding-bottom: 7px;
 
   @media (min-width: @tablet-width) {
-    padding-top: 42px;
-    padding-bottom: 43px;
+    padding-top: 40px;
+    padding-bottom: 46px;
   }
 
   @media (min-width: @desktop-width) {
-    padding-bottom: 39px;
+    padding-bottom: 42px;
   }
 }
 
@@ -24,7 +24,7 @@
   }
 }
 
-.letter__input--textarea {
+.letter__textarea {
   padding-left: 17px;
   padding-top: 16px;
   min-width: 263px;
@@ -32,8 +32,16 @@
   font-family: inherit;
   border: 2px solid @basic-tundora;
   box-sizing: border-box;
+  resize: none;
+  background-color: transparent;
+  outline: none;
 
   &:hover {
+    border-color: @special-downy;
+  }
+
+  &:hover,
+  &:focus {
     border-color: @special-downy;
   }
 
@@ -45,7 +53,7 @@
 
 .letter__title {
   padding-top: 5px;
-  padding-bottom: 21px;
+  padding-bottom: 23px;
 
 
   @media (min-width: @tablet-width) {

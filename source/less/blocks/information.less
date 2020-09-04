@@ -21,7 +21,7 @@
   }
 }
 
-.information__content-wrapper--phone {
+.information__content-wrapper-phone {
   padding-bottom: 28px;
 
   @media (min-width: @tablet-width) {
@@ -36,7 +36,7 @@
   }
 }
 
-.information__content-wrapper--email {
+.information__content-wrapper-email {
   @media (min-width: @tablet-width) {
     display: grid;
     grid-template-columns: 25% 75%;
@@ -59,49 +59,62 @@
   flex-direction: row;
   justify-content: space-between;
   margin: 0;
-  padding-left: 4px;
-  padding-top: 4px;
-  border-bottom: 2px solid @basic-black;
 
-  &:hover {
+  &:hover,
+  &:focus {
     border-color: @special-downy;
-  }
-
-  &:active {
-    border-color: @special-downy;
-  }
-
-  @media (min-width: @tablet-width) {
-    padding: 0;
-    padding-left: 19px;
-  }
-
-  @media (min-width: @desktop-width) {
-    padding-left: 17px;
   }
 }
 
 .information__input {
   position: relative;
-  padding-bottom: 16px;
+  padding-bottom: 10px;
+  padding-left: 4px;
+  padding-top: 2px;
   width: 100%;
+  border-bottom: 2px solid @basic-black;
+
+  &:hover,
+  &:focus {
+    border-color: @special-downy;
+  }
+
+  @media (min-width: @tablet-width) {
+    padding-left: 19px;
+    padding-bottom: 12px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 17px;
+  }
 
   &-image {
     fill: @basic-black-opacity-02;
-    padding-right: 6px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid @basic-black;
+
+    &--email {
+      padding-right: 3px;
+      padding-top: 2px;
+    }
 
     @media (min-width: @tablet-width) {
-      padding-right: 24px;
+      padding-right: 23px;
+      padding-bottom: 10px;
+
+      &--phone {
+        padding-right: 28px;
+      }
     }
 
     @media (min-width: @desktop-width) {
       padding-right: 7px;
-    }
-  }
 
-  @media (min-width: @tablet-width) {
-    padding-top: 0;
-    padding-left: 0;
-    padding-bottom: 14px;
+      &--email {
+        padding-right: 3px;
+        padding-bottom: 7px;
+      }
+    }
   }
 }

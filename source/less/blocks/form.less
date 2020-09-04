@@ -65,6 +65,7 @@
   font-weight: 400;
   color: @basic-tundora;
   border: none;
+  outline: none;
 
   @media (min-width: @tablet-width) {
     font-size: 19px;
@@ -81,6 +82,7 @@
     + .form__icon {
       fill-opacity: 1;
       fill: @special-downy;
+      border-color: @special-downy;
     }
   }
 
@@ -180,8 +182,12 @@
     justify-content: space-between;
     align-items: center;
     padding: 0;
-    min-width: 700px;
+    min-width: 670px;
     margin: 0 auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-width: 700px;
   }
 }
 
