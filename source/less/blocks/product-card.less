@@ -52,7 +52,7 @@
     box-shadow: 0 6px 10px @basic-black-opacity-01;
   }
 
-  &:active {
+  &:focus {
     box-shadow: 0 3px 5px @basic-black-opacity-01;
   }
 
@@ -98,6 +98,10 @@
 .product-card__link {
   color: inherit;
   text-decoration: none;
+
+  &:focus {
+    color: @basic-black-opacity-03;
+  }
 }
 
 .product-card__description {
@@ -158,11 +162,11 @@
   pointer-events: none;
 
   .product-card__button:hover &,
-  .product-card__button:active & {
+  .product-card__button:focus & {
     fill: @basic-downy;
   }
 
-  .product-card__button:active & {
+  .product-card__button:focus & {
     fill-opacity: 0.3;
   }
 }

@@ -24,7 +24,6 @@
   }
 }
 
-
 .colors__title {
   margin-top: 16px;
   margin-bottom: 34px;
@@ -127,7 +126,7 @@
   &::after {
     content: "";
     position: absolute;
-    display: none;
+    visibility: hidden;
     left: 12px;
     top: 0;
     transform: rotate(-45deg);
@@ -153,15 +152,12 @@
     border-color: @special-downy;
   }
 
+  &:focus::before,
   &:active::before {
     border-color: @basic-tundora-opacity-03;
   }
 
   .colors__input:checked + &::after {
-    display: block;
+    visibility: visible;
   }
-}
-
-.colors__input {
-  display: none;
 }
