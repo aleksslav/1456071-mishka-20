@@ -1,11 +1,7 @@
 .full-name {
   @media (min-width: @tablet-width) {
     padding-top: 53px;
-    padding-bottom: 31px;
-  }
-
-  @media (min-width: @desktop-width) {
-    padding-bottom: 34px;
+    padding-bottom: 40px;
   }
 }
 
@@ -21,7 +17,8 @@
   margin-bottom: 7px;
 
   @media (min-width: @tablet-width) {
-    margin-top: 5px;
+    padding-top: 5px;
+    margin-top: 0;
   }
 }
 
@@ -33,16 +30,11 @@
 
 .full-name__item {
   padding-left: 3px;
-  padding-top: 22px;
-  padding-bottom: 7px;
-  border-bottom: 2px solid @basic-black;
-
-  &:hover {
-    border-color: @special-downy;
-  }
+  padding-top: 23px;
+  padding-bottom: 0;
 
   &:last-child {
-    padding-bottom: 9px;
+    padding-bottom: 1px;
   }
 
   @media (min-width: @tablet-width) {
@@ -61,7 +53,7 @@
 
 .full-name__label {
   padding: 0;
-  margin-bottom: 12px;
+  margin-bottom: 10px;
 
   @media (min-width: @tablet-width) {
     padding-right: 26px;
@@ -69,16 +61,15 @@
 }
 
 .full-name__input {
+  width: 100%;
+  border-bottom: 2px solid @basic-black;
+  padding-bottom: 14px;
+
   @media (min-width: @tablet-width) {
     padding-left: 19px;
     padding-bottom: 11px;
     flex-grow: 1;
     border-bottom: 2px solid @basic-black;
-
-    &:hover,
-    &:focus {
-      border-color: @special-downy;
-    }
   }
 
   @media (min-width: @desktop-width) {

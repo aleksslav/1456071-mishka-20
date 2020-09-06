@@ -25,7 +25,7 @@
 }
 
 .colors__title {
-  margin-top: 16px;
+  margin-top: 15px;
   margin-bottom: 34px;
 
   @media (min-width: @tablet-width) {
@@ -104,11 +104,16 @@
     position: absolute;
     left: 3px;
     top: -12px;
-    width: 36px;
-    height: 36px;
+    width: 35px;
+    height: 35px;
     border-width: 2px;
     border-style: solid;
     border-color: @basic-tundora;
+
+    &::before:focus {
+      border-color: @basic-tundora;
+    }
+
 
     @media (min-width: @tablet-width) {
       left: 2px;

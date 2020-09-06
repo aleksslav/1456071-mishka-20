@@ -1,20 +1,26 @@
-var navMain = document.querySelector('.main-nav');
-var navToggle = document.querySelector('.main-nav__toggle');
+const navMain = document.querySelector('.main-nav');
+const navToggle = document.querySelector('.main-nav__toggle');
 
-navMain.classList.remove('main-nav--nojs');
-navToggle.classList.remove('main-nav__toggle--nojs');
+
+if (navMain && navMain.classList.contains('main-nav--nojs')) {
+  navMain.classList.remove('main-nav--nojs');
+
+  if (navMain) {
+    navMain.classList.add('main-nav--closed');
+  }
+}
 
 navToggle.addEventListener('click', function() {
   if (navMain.classList.contains('main-nav--opened')) {
     navMain.classList.remove('main-nav--opened');
     navMain.classList.add('main-nav--closed');
-    navToggle.classList.remove('main-nav__toggle--closed');
-    navToggle.classList.add('main-nav__toggle--opened');
+    navToggle.classList.remove('main-nav__toggle-off');
+    navToggle.classList.add('main-nav__toggle-on');
   } else {
     navMain.classList.add('main-nav--opened');
     navMain.classList.remove('main-nav--closed');
-    navToggle.classList.add('main-nav__toggle--closed');
-    navToggle.classList.remove('main-nav__toggle--opened');
+    navToggle.classList.remove('main-nav__toggle-on');
+    navToggle.classList.add('main-nav__toggle-off');
   }
 });
 
