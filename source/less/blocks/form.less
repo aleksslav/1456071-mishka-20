@@ -53,6 +53,10 @@
 .form__item {
   padding-bottom: 23px;
 
+  @media only screen and (min-width: 349px) and (max-width: 767px) {
+    padding-bottom: 30px;
+  }
+
   &:last-child {
     padding-bottom: 0;
   }
@@ -102,6 +106,10 @@
 .form__input-wrapper {
   padding: 0;
   margin: 0;
+}
+
+.form__input:focus + .form__label::before {
+  box-shadow: 0 0 0 2px @special-downy;
 }
 
 .form__title {
