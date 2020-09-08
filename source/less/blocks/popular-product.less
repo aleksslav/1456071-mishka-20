@@ -63,6 +63,10 @@
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+
+  @media (min-width: @tablet-width) {
+    padding-right: 378px;
+  }
 }
 
 .popular-product__header {
@@ -223,7 +227,7 @@
 }
 
 .popular-product__order {
-  margin: 0;
+  margin: 0 auto;
   margin-top: 9px;
   margin-bottom: 17px;
   padding-top: 15px;
