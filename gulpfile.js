@@ -33,6 +33,16 @@ const styles = () => {
 
 exports.styles = styles;
 
+const stylesCopy = () => {
+  return gulp.src("source/less/style.less")
+    .pipe(plumber())
+    .pipe(sourcemap.init())
+    .pipe(less())
+    .pipe(gulp.dest("build/css"))
+}
+
+exports.stylesCopy = stylesCopy;
+
 // Server
 
 const server = (done) => {
@@ -148,6 +158,7 @@ exports.html = html;
 const build = gulp.series(
   clean,
   copy,
+  stylesCopy,
   styles,
   scripts,
   images,
