@@ -1,6 +1,9 @@
 .form-cart {
   box-sizing: border-box;
-  padding: 31px 30px 46px;
+  padding-top: 31px;
+  padding-right: 30px;
+  padding-bottom: 46px;
+  padding-left: 30px;
   width: 320px;
   border: 1px solid @modal-silver;
   background-color: @basic-white;
@@ -11,7 +14,8 @@
 }
 
 .form-cart__title {
-  margin: 0 auto 11px;
+  margin: 0 auto;
+  margin-bottom: 11px;
   max-width: 160px;
   font-size: 25px;
   font-weight: 700;
@@ -21,7 +25,8 @@
   text-transform: uppercase;
 
   @media (min-width: @tablet-width) {
-    margin: 0 0 15px;
+    margin: 0;
+    margin-bottom: 15px;
     max-width: none;
     font-size: 30px;
     line-height: 57px;
@@ -30,12 +35,17 @@
 
 .form-cart__fieldset {
   margin: 0;
-  padding: 23px 0;
+  padding: 0;
+  padding-top: 23px;
+  padding-bottom: 23px;
   border: 0;
 
   @media (min-width: @tablet-width) {
     margin-bottom: 9px;
-    padding: 22px 78px;
+    padding-top: 22px;
+    padding-right: 78px;
+    padding-bottom: 22px;
+    padding-left: 78px;
   }
 }
 
@@ -63,7 +73,10 @@
 
 .form-cart__label {
   box-sizing: border-box;
-  padding: 16px 10px 15px;
+  padding-top: 16px;
+  padding-right: 10px;
+  padding-bottom: 15px;
+  padding-left: 10px;
   width: 82px;
   border: 2px solid @basic-tundora-opacity-01;
   font-weight: 700;
